@@ -156,7 +156,9 @@ figcaption, figure,
 footer, header, hgroup, menu, nav, 
 section, summary, time, mark, 
 audio, video {
-	font-family: 'SF-Pro-Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, 'Segoe UI', sans-serif !important; }
+	/* font-family: 'SF-Pro-Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, 'Segoe UI',  */
+	font-family: 'SF-Pro-Display', 
+  sans-serif !important; }
 	/* font-family: 'SF-Pro-Display', sans-serif !important;  */
 
 body {
