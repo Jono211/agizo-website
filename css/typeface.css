@@ -67,7 +67,9 @@ html {
 html, body, 
 h1, h2, h3, h4, h5, h6, 
 p, div, span, ul, ol, li {
-	font-family: 'SF-Pro-Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, 'Segoe UI', sans-serif !important; }
+	/* font-family: 'SF-Pro-Display', Roboto, sans-serif !important; */
+	font-family: 'SF-Pro-Display', sans-serif !important; 
+}
 
 
 /* Typography
