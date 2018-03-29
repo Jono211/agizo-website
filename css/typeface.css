@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* --------------------------------------------------------------
  * typography.css
- * Setup for website typography.
+ * Website typography setup.
 -----------------------------------------------------------------
  * Subject: 	Agizo Solutions CSS
  * Author: 	  Jonathan Cleary
@@ -95,8 +95,8 @@ body {
 
 p {
 	margin: 1rem 0;
-	font-size: 1.1rem;
   line-height: 1.7;
+	font-size: 1.15rem;
   font-style: normal;
 	font-weight: normal;
 	letter-spacing: normal;
@@ -104,7 +104,7 @@ p {
   p.para-std, 
   p .para-std {
     color: #555;
-    font-size: 1.1rem !important;
+    font-size: 1.15rem !important;
     line-height: 1.75 !important; }
   p.para-intro, 
   p .para-intro {
@@ -139,8 +139,8 @@ h6, .h6 {
 
 h1,
 .h1 {
-	font-size: 4.5rem !important;
-	font-weight: 200;
+	font-size: 4.75rem !important;
+	font-weight: 300;
 	line-height: 1 !important;
 	letter-spacing: -.25rem; }
 h2,
@@ -159,7 +159,7 @@ h3,
 h4,
 .h4,
 .sub-title {
-	font-family: 'Poppins' !important;
+	font-family: Poppins !important;
 	font-size: 1rem !important;
 	font-weight: 600 !important;
 	letter-spacing: 0.75rem !important;
@@ -175,6 +175,7 @@ h6,
 	font-weight: 700;
 	letter-spacing: normal; }
 
+
 @media (max-width: 339px) {
   h1, .h1 {
 	  font-weight: 300;
@@ -185,8 +186,7 @@ h6,
 	  letter-spacing: normal; }
   h3, .h3 {
     font-size: 1.25rem;
-	  letter-spacing: normal; }
-}
+	  letter-spacing: normal; } }
 
 
 /* Unique Header
