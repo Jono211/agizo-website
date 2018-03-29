@@ -77,48 +77,48 @@ misc
 ---------------------------------------------------------------*/
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff') format('woff');
 	font-weight: 800;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Light.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal; }
-@font-face {
+/*@font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff') format('woff');
 	font-weight: 200;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff') format('woff');
 	font-weight: 100;
-	font-style: normal; }
+	font-style: normal; }*/
 
 @font-face {
 	font-family: Poppins;
-	src: url('fonts/Poppins-Bold.ttf') format('truetype');
+	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal; }
 @import url(//fonts.googleapis.com/css?family=Poppins);
