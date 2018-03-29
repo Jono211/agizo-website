@@ -121,6 +121,11 @@ misc
 	src: url('../fonts/Poppins-Semibold.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal; }
+@font-face {
+	font-family: Poppins;
+	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal; }
 @import url(//fonts.googleapis.com/css?family=Poppins);
 
 
@@ -293,7 +298,7 @@ h4,
 .subsectionhead {
 	font-family: Poppins !important;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	letter-spacing: .75rem;
 	text-transform: uppercase; }
 
@@ -336,7 +341,7 @@ p.para-intro {
 .subheading {
 	font-family: Poppins !important;
 	font-size: 1rem !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 	letter-spacing: .8rem !important;
 	text-transform: uppercase !important; }
 
@@ -563,7 +568,7 @@ h1 .pagetitle {
     color: var(--light);
     font-family: Poppins !important;
     font-size: .8rem !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     /* font-size: .75rem !important; */
     letter-spacing: 0.05rem !important;
     /* border-bottom: 3px solid transparent; */
@@ -1442,7 +1447,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 	font-size: .75rem !important;
 	letter-spacing: 0.2rem !important;
 	font-family: Poppins !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 	text-transform: uppercase !important; }
 	.btn:hover {
 		color: #356;
