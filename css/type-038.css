@@ -5,8 +5,8 @@
 -----------------------------------------------------------------
  * Subject: 	Agizo Solutions CSS
  * Author: 	  Jonathan Cleary
- * Date: 		  2018-03-27
- * Ver: 	    0.3.7
+ * Date: 		  2018-03-29
+ * Ver: 	    0.3.8
 -------------------------------------------------------------- */
 
 
@@ -14,43 +14,33 @@
 -------------------------------------------------------------- */
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff') format('woff');
 	font-weight: 800;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Light.woff') format('woff');
+	src: url('../fonts/SF-Pro-Display/SF-Pro-Display-Light.woff') format('woff');
 	font-weight: 300;
-	font-style: normal; }
-@font-face {
-	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff') format('woff');
-	font-weight: 200;
-	font-style: normal; }
-@font-face {
-	font-family: 'SF-Pro-Display';
-	src: url('fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff') format('woff');
-	font-weight: 100;
 	font-style: normal; }
 
 
@@ -104,7 +94,7 @@ p {
   p.para-std, 
   p .para-std {
     color: #555;
-    font-size: 1.15rem !important;
+    font-size: 1.2rem !important;
     line-height: 1.75 !important; }
   p.para-intro, 
   p .para-intro {
@@ -167,7 +157,7 @@ h4,
 h5,
 .h5 {
 	font-size: 1.25rem;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: .5rem; }
 h6,
 .h6 {
