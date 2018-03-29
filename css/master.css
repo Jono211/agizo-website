@@ -598,6 +598,7 @@ h1 .pagetitle {
   background-size: cover;
   position: absolute;
   overflow: hidden;
+  border: 0;
 	width: 100%;
   height: 2.67rem;
 	width: 100%;
@@ -692,6 +693,7 @@ h1 .pagetitle {
   bottom: 0;
   left: 0;
   right: 0;
+  border: 0;
   overflow: hidden;
   background-clip: padding-box; 
 }
@@ -757,6 +759,7 @@ h1 .pagetitle {
   height: 36rem;
   position: relative;
   display: block;
+  border: 0;
   /*-webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;*/
@@ -857,6 +860,7 @@ h1 .pagetitle {
   bottom: 0;
   left: 0;
   right: 0;
+  border: 0;
   overflow: hidden;
   /*-webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -885,6 +889,7 @@ h1 .pagetitle {
   position: absolute;
   display: block;
   overflow: hidden;
+  border: 0;
   top: .85rem;
   left: 3rem;
   bottom: 0;
@@ -909,6 +914,7 @@ h1 .pagetitle {
   bottom: 0;
   left: 3.1rem;
   right: 0;
+  border: 0;
   overflow: hidden;
   z-index: 3;
 	background-clip: padding-box; 
@@ -928,6 +934,7 @@ h1 .pagetitle {
   bottom: 0;
   left: 3.1rem;
   right: 0;
+  border: 0;
   overflow: hidden;
   z-index: 3;
 	background-clip: padding-box; 
@@ -941,6 +948,7 @@ h1 .pagetitle {
   position: absolute;
   display: block;
   overflow: hidden;
+  border: 0;
 	width: 16rem;
   height: 16rem;
   top: 8rem;
@@ -960,6 +968,7 @@ h1 .pagetitle {
   position: absolute;
   display: block;
   overflow: hidden;
+  border: 0;
 	width: 16rem;
   height: 16rem;
   top: 8rem;
@@ -978,6 +987,7 @@ h1 .pagetitle {
   background-size: contain;
   position: relative;
   display: block;
+  border: 0;
   height: 5rem;
 	width: 20rem;
   top: 10%; 
@@ -1220,9 +1230,6 @@ hr {
 
 /* tabs
 -------------------------------------------------------------- */
-
-/*p > ul { margin-top: .05rem; }*/
-
 .tabs {
 	width: 90%;
 	opacity: 1;
@@ -1439,7 +1446,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 	text-transform: uppercase !important; }
 	.btn:hover {
 		color: #356;
-		/*color: #3355ff; */
+		/*color: #35f; */
 		border: 1px solid #356;
 		background-color: transparent;
 		background-color: inherit;
@@ -1544,7 +1551,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 		transition: background-color .6s ease; }
 		.slideshow .active,
 		.slideshow .dot:hover {
-			background-color: #717171; }
+			background-color: #777; }
 
 .slideshow q {
 	font-style: normal; /*italic;*/
@@ -1592,7 +1599,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
   display: inline-block;
   margin: 0 auto;
   border: 6px solid rgba(0, 0, 0, .1);
-  border-left-color: #5566ff;
+  border-left-color: #56f;
   border-radius: 50%;
   width: 60px;
   height: 60px;
