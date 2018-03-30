@@ -68,7 +68,7 @@
 
 	<div id="homePage" class="page-wrapper debuger">
 
-		<div><a href="#footer" class="pointer"><img id="agizo-text-logo"></a></div>
+		<div><a href="#footer" class="pointer"><div id="agizo-text-logo"></div></a></div>
 		<nav id="navigate" class="main-nav subheading antialias">
 			<ul>
 				<li></li>
@@ -78,7 +78,7 @@
 				<li><a href="root/aboutus.html" class="hover-underline-animation">About Us</a></li>
 				<li><a href="root/contact.html" class="hover-underline-animation">Contact</a></li>
 				<li>
-					<a href="#" class="pointer-noevents">
+					<a href="root/devpage.html" class="padding-left-i margin-right-2-i" style="padding-top:.75rem;">
 						<i class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
 					</a>
 				</li>
@@ -87,12 +87,12 @@
  		<hr class='separator-no-padding'>
 
 		<header id="hero-section">
-			<img id="hero-section">
-			<img id="agizo-logo-white" class="img-responsive">
+			<div id="hero-section"></div>
+			<div id="agizo-logo-white" class="img-responsive"></div>
 			<div class="hero-section-text">
 				<h1 class="ci-font-white select-none">
-					<span>Integrated Development &amp;</span><br>
-					<span style="letter-spacing:-0.025em;">Spatial Planning Services</span>
+					<span>Integrated Development <span class="smaller">&amp;</span></span><br>
+					<span style="letter-spacing:-.15rem;">Spatial Planning Services</span>
 				</h1>
 			</div>
 		</header>
@@ -196,7 +196,7 @@
 			<div class="grid-one grid-gap-none">
 				<!-- <div style="with-kburns"> -->
 				<!-- <img id="placeholder1" class="img-shadow" scr="agizo-solutions/img/02-building-1920x540.jpg"> -->
-				<img id="placeholder1" class="img-shadow">
+				<div id="placeholder1" class="img-shadow"></div>
 			</div>
 		</section>
 
@@ -224,7 +224,7 @@
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<img id="our-services1" class="img-shadow" />
+							<div id="our-services1" class="img-shadow"></div>
 							<!--<div class='placeholder-img half-block img-shadow'>
 								<div class="align-left align-top">
 									<i class="fa fa-5x fa-image"></i>
@@ -245,7 +245,7 @@
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
 							<div class='vivify driveInLeft delay-1500'>
-							<img id="our-services2" class="img-shadow" />
+							<div id="our-services2" class="img-shadow"></div>
 							<!--<div class='placeholder-img half-block img-shadow'>
 								<div class="align-right align-top">
 									<i class="fa fa-5x fa-image"></i>
@@ -300,7 +300,7 @@
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
- 							<img id="our-services3"/>
+ 							<div id="our-services3"></div>
 						</div>
 					</div>
 				<div class='empty-space empty-quart'></div>
@@ -312,7 +312,7 @@
 					<div class='grid-two'>
 						<div class="super-centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<img id="our-services4" class="img-responsive"/>
+							<div id="our-services4" class="img-responsive"></div>
 						</div>
 						<div class='gutter-auto padding-4-i'>
 							<h4 class='ci-font-agizo1'>OUR SERVICES</h4>
@@ -337,21 +337,23 @@
 		</main>
 
 
-		<div id="testimonial" class="grid-one grid-gap-none">
-			<div id="placeholder2" class="img-shadow img-responsive">
-				<!-- <img id="placeholder2" class="img-shadow"> -->
-				<div class="caption-overlay h1 select-none">
-					<span>We assist decision-makers<br>solve spatial planning problems...</span>
+    <section id="testimonial" class="section-container">
+			<div class="grid-one grid-gap-none">
+				<div id="placeholder2" class="img-shadow img-responsive">
+					<!-- <img id="placeholder2" class="img-shadow"> -->
+					<div class="caption-overlay h1 select-none">
+						<span>We assist decision-makers<br>solve spatial planning problems...</span>
+					</div>
+				</div>
+				<div class="ci-fill-alt1 divider-padding-1x"></div>
+				<div class="ci-fill-alt2 divider-padding-2x"></div>
+
+				<div class="grid-one padding-top-2-i">
+					<div class="h4 ci-font-agizo3 margin-left-3-i">testimonial</div>
+					<!-- <div class='empty-space empty-half'></div> -->
 				</div>
 			</div>
-			<div class="ci-fill-alt1 divider-padding-1x"></div>
-			<div class="ci-fill-alt2 divider-padding-2x"></div>
-
-			<div class="grid-one padding-top-2-i">
-				<div class="h4 ci-font-agizo3 margin-left-3-i">testimonial</div>
-				<!-- <div class='empty-space empty-half'></div> -->
-			</div>
- 		</div>
+		</section>
 
     <section class="slideshow">
       <div class="slideshow-container">
@@ -454,7 +456,9 @@
 					<div class='empty-space empty-half'></div>
 					<div>Tel:&emsp;+27 11 312 8598</div>
 					<div>Fax:&emsp;+27 86 598 0773</div>
-					<div>Mail:&emsp;<a class="ci-font-whitesmoke" href="mailto:info@agizo.co.za" style="text-decoration:none;">info@agizo.co.za</a></div>
+					<div>Mail:&emsp;
+						<a class="ci-font-whitesmoke" style="text-decoration:none;" href="mailto:info@agizo.co.za">info@agizo.co.za</a>
+					</div>
 				</div>
 			</div>
 
@@ -468,24 +472,28 @@
 					</p>
 				</div>-->
 				<div class="padding-none-i">
-					<!-- <img id="agizo-logo-float" style="width:320px;height:80px;top:10%;"> -->
-					<img id="agizo-logo-float">
+					<!-- <img id="agizo-logo-float" style="width:20rem;height:5rem;top:10%;"> -->
+					<div id="agizo-logo-float"></div>
 				</div>
 			</div>
 
  			<div class="grid-one padding-1 padding-top-none-i ci-fill-darker negative-offset">
 				<div class="breadcrumb h6 smaller margin-left-3-i">
-					<div class="breadcrumb-item"><a href="#hero-section" class="hover-underline-animation" title="1">Home</a></div>
+					<!-- <div class="breadcrumb-item"><a href="#hero-section" class="hover-underline-animation" title="1">Home</a></div>
 					<div class="breadcrumb-item"><a href="root/services.html" class="hover-underline-animation">Services</a></div>
 					<div class="breadcrumb-item"><a href="root/projects.html" class="hover-underline-animation">Projects</a></div>
 					<div class="breadcrumb-item"><a href="root/aboutus.html" class="hover-underline-animation">About Us</a></div>
-					<div class="breadcrumb-item"><a href="root/contact.html" class="hover-underline-animation">Contact</a></div>
-					<!-- <div class="breadcrumb-item">Agizo Solutions (Pty) Ltd.</div>
+					<div class="breadcrumb-item"><a href="root/contact.html" class="hover-underline-animation">Contact</a></div> -->
+					<!-- <div class="breadcrumb-item">Agizo Solutions (Pty) Ltd.</div> -->
 					<div class="breadcrumb-item">
-						<a href="../index.html" class="hover-underline-animation">Agizo Solutions (Pty) Ltd.</a>
+						<a href="#hero-section" class="hover-underline-animation">Agizo Solutions (Pty) Ltd.</a>
 					</div>
-					<div class="breadcrumb-item">Terms of Use</div>
-					<div class="breadcrumb-item">Privacy Policy</div> -->
+					<div class="breadcrumb-item">
+						<a href="root/privacy.html" class="hover-underline-animation">Terms of Use&nbsp; &amp; &nbsp;Privacy Policy</a>
+					</div>
+					<!-- <div class="breadcrumb-item">
+						<a href="root/privacy.html" class="hover-underline-animation">Privacy Policy</a>
+					</div> -->
 				</div>
 			</div>
 		</footer>
