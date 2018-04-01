@@ -1,18 +1,7 @@
 # jono211.github.io
 agizo-website
 
-
-PAGES           STATUS
------           ------
-1   home        working example
-2   services    working example
-3   projects    outlined only
-4   about us    outlined only
-5   contact     outlined only
-6   privacy     working example
-7*  devpage     initial mockup
-
-
+<hr>
 
 <div class="tg-wrap"><table style="undefined;table-layout: fixed; width: 614px">
 <colgroup>
@@ -57,7 +46,7 @@ PAGES           STATUS
   </tr>
   <tr>
     <td>07</td>
-    <td>devpage</td>
+    <td>devpage*</td>
     <td>initial mockup</td>
   </tr>
 </table></div>
