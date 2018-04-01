@@ -147,6 +147,7 @@ html {
   	 -moz-text-size-adjust: 100%;
   		-ms-text-size-adjust: 100%; }
 
+
 html, body, div, 
 h1, h2, h3, h4, h5, h6, 
 p, span, object, iframe, 
@@ -324,6 +325,28 @@ h6,
 	letter-spacing: -.025rem; }
 */
 
+/* @media (max-width: 339px) { */
+/* @media (max-width: 479px) {
+  h1, .h1 {
+    font-size: 2.25rem;
+	  letter-spacing: normal; }
+  h2, .h2 {
+    font-size: 1.75rem;
+	  letter-spacing: normal; }
+  h3, .h3 {
+    font-size: 1.25rem;
+	  letter-spacing: normal; } } */
+/* @media (max-width: 479px) {
+  h1, .h1, 
+  h2, .h2, 
+  h3, .h3 {
+    font-size: 98% !important;
+	  letter-spacing: normal; 
+  } 
+} */
+
+/* @media (max-width: 479px) { font-size: calc(0.18rem + 1vw); }  */
+
 
 p.para-std {
 	color: #555;
@@ -333,7 +356,7 @@ p.para-intro {
 	color: #444 !important;
 	font-size: 1.5rem;
 	line-height: 1.875 !important;
-  text-align: justify;
+  /* text-align: justify; */
 	-webkit-hyphens: auto;
 	   -moz-hyphens: auto;
 	    -ms-hyphens: auto;
@@ -372,9 +395,10 @@ h1 .pagetitle {
 .measure-wide   { max-width: 56rem; }
 .measure-narrow { max-width: 32rem; }
 
-[class^="measure-"] p:not(:first-child) {
+/* [class^="measure-"] p:not(:first-child):not([class^="para-"]) { */
+/* [class^="measure-"] p:not([class^="para"]) {
   text-indent: 1rem;
-  margin-top: -.5rem; }
+  margin-top: -.5rem; } */
 
 
 /* =========================================================== */
@@ -646,6 +670,7 @@ h1 .pagetitle {
 @media (max-width: 479px) {
 	.main-nav a {
 		width: 100%;
+    text-overflow: ellipsis;
 	}
   .centered-item [id^='our-services'] {
     margin: 0 auto !important;
@@ -731,24 +756,24 @@ h1 .pagetitle {
   background-clip: padding-box; 
 }
 
-/*#placeholder1 {
+/*#placeholder-buildings {
   background-image: url('file:///d:/web-development/agizo-solutions/img/02-building-1920x540.jpg'); }*/
-#placeholder1 {
+#placeholder-buildings {
   background-image: url('../img/20-buildings-1920x1280.jpg'); }
 
-#placeholder2 {
+#placeholder-business {
   /* resize: both !important; */
   background-image: url('../img/07-business-1440px.jpg'); }
 
 
-#placeholder3 {
+#placeholder-documents {
 	opacity: .9;
 	height: 22rem !important;
 	max-height: 22rem !important;
 	background-position: center bottom !important;
-  background-image: url('../img/22-papers-1440x960.jpg'); }
+  background-image: url('../img/22-documents-1440x960.jpg'); }
 
-#placeholder4 {
+#placeholder-buildingsFull {
 	height: 99vh !important;
 	max-height: 99vh !important;
 	/* max-height: 30rem !important; */
@@ -756,9 +781,9 @@ h1 .pagetitle {
 		url('../img/semi-transparent.png'), 
     url('../img/20-buildings-1920x1280.jpg'); }
 
-#placeholder5 {
-	height: 30rem !important;
-	max-height: 30rem !important;
+#placeholder-buildingsAlt {
+	height: 33rem !important;
+	max-height: 33rem !important;
 	background-position: center bottom !important;
   background-image: 
 		url('../img/semi-transparent.png'), 
@@ -766,20 +791,20 @@ h1 .pagetitle {
   /* background-image: url('file:///d:/web-development/agizo-solutions/img/23-news-1440x954.jpg'); */
   /* background-image: url('file:///d:/web-development/agizo-solutions/img/54-aerial-1280px.jpg'); */
 
-#placeholder6 {
+#placeholder-portCustoms {
 	height: 30rem !important;
 	max-height: 30rem !important;
   background-image: 
 		url('../img/semi-transparent.png'), 
 		url('../img/51-port-1280x853.jpg'); }
 
-#placeholder7 {
+#placeholder-highwayBlur {
 	height: 30rem !important;
 	max-height: 30rem !important;
   background-image: 
     url('../img/50-highway-1280x853.jpg'); }
 
-#placeholder8 {
+#placeholder-bridgeCurved {
 	height: 30rem !important;
 	max-height: 30rem !important;
 	background-position: center bottom !important;
@@ -787,8 +812,13 @@ h1 .pagetitle {
 		url('../img/semi-transparent.png'), 
     url('../img/58-bridge-1280px.jpg'); }
 
-
 /* 50-highway-1280x853.jpg 60_roads_1280x720.jpg */
+
+@media screen and (max-width: 768px) {
+  [id^='placeholder'] {
+	  background-attachment: scroll;
+  }
+}
 
 
 [id^='our-services'] {
@@ -875,7 +905,7 @@ h1 .pagetitle {
 	top: 20%;
   left: 5%;
 	color: #fff;
-	font-size: 110%;
+	font-size: 105%;
   /* text-shadow: 1px 2px 30px rgba(0, 0, 0, .5); */
   text-shadow: 2px 2px 22px rgba(0, 0, 0, .5); }
 /* .caption-overlay span + span { top: 35%; } */
@@ -945,8 +975,9 @@ h1 .pagetitle {
 @media screen and (max-width: 768px) {
   #hero-picture {
     height: 50vh;
-	  /* background-position: center bottom !important; */
-	  background-position-y: -5vh !important;
+	  background-attachment: scroll;
+		background-position: center center;
+  /* background-position-y: -5vh !important; */
   }
   /* #hero-picture .hero-picture-text {
     padding-top: 9rem;
@@ -966,7 +997,7 @@ h1 .pagetitle {
   display: block;
   overflow: hidden;
   border: 0;
-  top: .7rem;
+  top: .67rem;
   left: 3rem;
   bottom: 0;
   right: 0;
@@ -1060,7 +1091,14 @@ h1 .pagetitle {
   bottom: 0;
   right: 0;
   z-index: 3;
-	opacity: 1;
+  /* filter: alpha(opacity=50);
+	opacity: .5; */
+  /* filter: contrast(10%);
+  filter: brightness(150%);
+  filter: grayscale(10%);
+  filter: alpha(opacity=50);
+  filter: alpha(0); */
+  filter: invert(1);
 	background-clip: padding-box; 
 }
 
@@ -1129,9 +1167,9 @@ h1 .pagetitle {
 ---------------------------------------------------------------*/
 .caption {
 	position: absolute;
-	top: 25%;
-	left: 40%;
-	width: 50%;
+	top: 20%;
+	left: 35%;
+	/* width: 50%; */
   right: 2%;
 	color: #000; }
 	.caption span.border {
@@ -1322,6 +1360,7 @@ hr {
 	opacity: 1;
   margin-top: 2rem;
   margin-bottom: .25rem;
+  border-bottom: 1px solid #aaa;
 	display: -webkit-box;
 	-webkit-box-pack: justify;
 	display: -ms-flexbox;
@@ -1415,7 +1454,7 @@ hr {
 		    -ms-transform: scaleY(1);
 		     -o-transform: scaleY(1);
 		        transform: scaleY(1);
-		border-bottom: 1px solid #aaa;
+		/* border-bottom: 1px solid #aaa; */
 		padding: .5rem;
 		clip: auto;
 		-webkit-clip-path: inset(0%);
@@ -1499,7 +1538,8 @@ hr {
     margin: 0;
     padding: .2rem 0; }
     .breadcrumb .breadcrumb-item:first-child {
-      font-size: 105%;
+	    line-height: 1.4;
+      font-size: 110%;
       color: #789; }
     .breadcrumb .breadcrumb-item:not(:last-child) {
       margin-right: .2rem; }
@@ -1650,10 +1690,12 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 			background-color: #777; }
 
 .slideshow q {
-	font-style: normal; /*italic;*/
+	font-style: normal;
+	/* font-style: italic; */
 	font-family: 'Playfair Display', serif !important;
 	font-size: 2.5rem;
 	line-height: 3rem;
+  font-weight: 600;
 	color: #333; }
 .slideshow .author {
 	color: var(--agizo-orange);
