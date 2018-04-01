@@ -104,7 +104,7 @@
   margin-left: 0;
   margin-right: 0; }
   .row-flush > .col,
-  .row-flush > [class*="col-"] {
+  .row-flush > [class^="col-"] {
     padding-left: 0;
     padding-right: 0; }
 
@@ -112,7 +112,7 @@
   margin-right: 0;
   margin-left: 0; }
   .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
+  .no-gutters > [class^="col-"] {
     padding-right: 0;
     padding-left: 0; }
 

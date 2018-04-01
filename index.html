@@ -5,21 +5,21 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Light.woff" as="font" type="font/woff" crossorigin/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Light.woff"/>
 		<!-- <link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff" as="font" type="font/woff" crossorigin/> -->
-		<link rel="preload" href="fonts/Poppins-Semibold.ttf" as="font" type="font/truetype" crossorigin/>
-		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" type="font/truetype" crossorigin/>
-		<link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="fonts/Poppins-Semibold.ttf"/>
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="fonts/Poppins-Bold.ttf"/>
+		<!-- <link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'/> -->
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reboot.css"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="css/master.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/default.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/vivify.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="fonts/font-awesome/css/fontawesome-all.css"/>
 		<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/gridworx.css"/> -->
@@ -36,8 +36,9 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<script>
+	<!-- <script>
 		//  When user scrolls - execute scrollingFunction
+		var prevScrollPos = window.pageYOffset;
 		window.onscroll = function () { scrollingFunction() };
 		function scrollingFunction() {
 			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -45,51 +46,72 @@
 			var scrolled = (winScroll / height) * 100;
 			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
 			// after scrolling 99px, show the toTop icon
-			if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
+			if (winScroll > 99 || winScroll > 99) {
+			//if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
 				document.getElementById("scrollToTop").style.display = "block";
 			} else {
 				document.getElementById("scrollToTop").style.display = "none";
 			}
 		}
-	</script>
+	</script> -->
 
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<script>
+	<!-- <script>
 		// When user clicks the button, scroll to the top
 		function toTopFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;	}
-	</script>
+	</script> -->
 
 
 	<div id="homePage" class="page-wrapper debuger">
 
-		<div><a href="#footer" class="pointer"><div id="agizo-text-logo"></div></a></div>
 		<nav id="navigate" class="main-nav subheading antialias">
-			<ul>
-				<li></li>
-				<li><a href="#footer" class="pointer-noevents activate-border --x">Home</a></li>
-				<li><a href="root/services.html" class="hover-underline-animation">Services</a></li>
-				<li><a href="root/projects.html" class="hover-underline-animation">Projects</a></li>
-				<li><a href="root/aboutus.html" class="hover-underline-animation">About Us</a></li>
-				<li><a href="root/contact.html" class="hover-underline-animation">Contact</a></li>
-				<li>
-					<a href="root/devpage.html" class="padding-left-i margin-right-2-i" style="padding-top:.75rem;">
-						<i class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
-					</a>
-				</li>
-			</ul>
+			<a href="#footer" class="pointer geometric"><div id="agizo-text-logo"></div></a>
+			<a href="#hero-picture" class="underline-is-fixed gutter-auto ci-font-white">Home</a>
+			<a href="root/services.html" class="underline-on-hover">Services</a>
+			<a href="root/projects.html" class="underline-on-hover">Projects</a>
+			<a href="root/aboutus.html" class="underline-on-hover">About Us</a>
+			<a href="root/contact.html" class="underline-on-hover">Contact</a>
+			<a href="root/devpage.html" class="padding-left-i margin-right-2-i">
+				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
+			</a>
 		</nav>
- 		<hr class='separator-no-padding'>
+		<!-- <script type='text/javascript'>
+			//var prevScrollPos = window.pageYOffset;
+			function hideOnScroll () {
+				var navbar = document.getElementById('navigate');
+				var currentScrollPos = window.pageYOffset;
+				if(prevScrollPos > currentScrollPos) {
+					navbar.style.top = '4px';
+				} else {
+					navbar.style.top = '-40px';
+				}
+				prevScrollPos = currentScrollPos;
+				/*if(currentScrollPos > 555) {
+					navbar.style.backgroundColor = 'grey';
+				} else {
+					navbar.style.backgroundColor = 'transparent';
+				}*/
+				if(currentScrollPos > 555) {
+					navbar.classList.add("filled")
+				} else {
+					navbar.classList.remove("filled");
+				}
+			}
+			window.addEventListener('scroll', hideOnScroll);
+		</script> -->
 
-		<header id="hero-section">
-			<div id="hero-section"></div>
+ 		<hr id="header" class='separator-no-padding'>
+
+		<header id="hero-picture">
+			<div id="hero-picture"></div>
 			<div id="agizo-logo-white" class="img-responsive"></div>
-			<div class="hero-section-text">
+			<div class="hero-picture-text">
 				<h1 class="ci-font-white select-none">
 					<span>Integrated Development <span class="smaller">&amp;</span></span><br>
 					<span style="letter-spacing:-.15rem;">Spatial Planning Services</span>
@@ -106,21 +128,75 @@
 				<div class="h4 ci-font-agizo1 margin-left-3-i">WHAT WE DO</div>
 				<div class='empty-space empty-half'></div>
 			</div>
+
 			<div class='grid-repeater-fit align-left align-top margin-left-3-i'>
-				<div>
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="1,63 1,2 62,63 "/>
-						<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="14,54 14,30 38,54 "/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="22" x2="2" y2="22"/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="6" y1="30" x2="2" y2="30"/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="38" x2="2" y2="38"/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="6" y1="46" x2="2" y2="46"/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="54" x2="2" y2="54"/>
-						<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="25,1 19,7 55,43 63,45 61,37 "/>
-						<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="25" y1="13" x2="31" y2="7"/>
-					</svg>
- 					<br><h3 class='icontitle antialias'>Spatial Planning</h3>
+				<!-- 01 -->
+				<div class='icontitle'>
+					<div class='svg-container'>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+							<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="1,63 1,2 62,63 "/>
+							<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="14,54 14,30 38,54 "/>
+							<!-- <line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="22" x2="2" y2="22"/>
+							<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="6" y1="30" x2="2" y2="30"/>
+							<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="38" x2="2" y2="38"/>
+							<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="6" y1="46" x2="2" y2="46"/>
+							<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="8" y1="54" x2="2" y2="54"/> -->
+							<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="25,1 19,7 55,43 63,45 61,37 "/>
+							<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="25" y1="13" x2="31" y2="7"/>
+						</svg>
+					</div>
+					<div class='h3 antialias'>Spatial Planning</div>
+ 					<!-- <br><h3 class='icontitle antialias'>Spatial Planning</h3> -->
+				</div>
+				<!-- 02 -->
+				<div class='icontitle'>
+					<div class='svg-container'>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+							<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="18,26.066 2,33 32,45 62,33 46,26.067 "/>
+							<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="18,39.066 2,46 32,58 62,46 46,39.067 "/>
+							<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="32,32 62,20 32,7 2,20 "/>
+						</svg>
+					</div>
+					<div class='h3 antialias'>Geo-Informatics</div>
+					<!-- <br><h3 class='icontitle antialias'>Geo-Informatics</h3> -->
+				</div>
+				<!-- 03 -->
+				<div class='icontitle'>
+					<div class='svg-container'>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+							<g>
+								<circle fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" cx="32" cy="19.001" r="4"/>
+								<path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M45,21.023C44.968,13.276,39.181,7,32,7
+									s-13,6.276-13,14.023C19,31.046,31.979,47,31.979,47S45.043,31.046,45,21.023z"/>
+							</g>
+							<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="21,37 12,37 1,57 32,57 63,57 52,37 43,37 "/>
+						</svg>
+					</div>
+					<div class='h3 antialias'>Land Surveying</div>
+					<!-- <br><h3 class='icontitle antialias'>Land Surveying</h3> -->
+				</div>
+				<!-- 04 -->
+				<div class='icontitle'>
+					<div class='svg-container'>
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="100%" height="100%" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+							<g>
+								<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="1,59 22,51 42,59 63,51 63,5 42,13 22,5 
+									1,13 "/>
+								<g>
+									<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="22" y1="5" x2="22" y2="51"/>
+								</g>
+								<g>
+									<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="42" y1="13" x2="42" y2="59"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class='h3 antialias'>Drone Mapping</div>
+					<!-- <br><h3 class='icontitle antialias'>Drone Mapping</h3> -->
 				</div>
 	 			<!--<div>
 					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -134,76 +210,37 @@
 					</svg>				
 					<br><h3 class='icontitle antialias'>Integrated <br>Development</h3>
 				</div>-->
-				<div>
-					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="18,26.066 2,33 32,45 62,33 46,26.067 "/>
-						<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="18,39.066 2,46 32,58 62,46 46,39.067 "/>
-						<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="32,32 62,20 32,7 2,20 "/>
-					</svg>				
-					<br><h3 class='icontitle antialias'>Geo-Informatics</h3>
-				</div>
-				<div>
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<g>
-							<circle fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" cx="32" cy="19.001" r="4"/>
-							<path fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" d="M45,21.023C44.968,13.276,39.181,7,32,7
-								s-13,6.276-13,14.023C19,31.046,31.979,47,31.979,47S45.043,31.046,45,21.023z"/>
-						</g>
-						<polyline fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="21,37 12,37 1,57 32,57 63,57 52,37 43,37 "/>
-					</svg>				
-					<br><h3 class='icontitle antialias'>Land Surveying</h3>
-				</div>
-				<div>
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-						<g>
-							<polygon fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" points="1,59 22,51 42,59 63,51 63,5 42,13 22,5 
-								1,13 	"/>
-							<g>
-								<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="22" y1="5" x2="22" y2="51"/>
-							</g>
-							<g>
-								<line fill="none" stroke="#666" stroke-width="2" stroke-miterlimit="10" x1="42" y1="13" x2="42" y2="59"/>
-							</g>
-						</g>
-					</svg>				
-					<br><h3 class='icontitle antialias'>Drone Mapping</h3>
-				</div>
 			</div>
 			<div class='empty-space empty-triplet'></div>
 		</section>
 
 
-    <section id="whoWeAre" class="bg-light">
+    <section id="whoWeAre" class="bg-light top-shadow">
 			<div class="grid-one padding-top-4-i">
-				<div class="subheading ci-font-agizo2 margin-left-3-i">WHO WE ARE</div>
+				<div class="h4 ci-font-agizo2 margin-left-3-i">WHO WE ARE</div>
 				<div class="semi-transparent-border"></div>
 			</div>
 
-			<div class="grid-two">
-				<div class="padding-3-i">
-					<p class='para-intro'><strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, land-use planning and management, development planning, geographic information systems, land surveying and project management.</p>
+			<div class="grid-two grid-gap-column-larger padding-3-i">
+				<div class="">
+					<p class='para-intro justify'><strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, land-use planning and management, development planning, geographic information systems, land surveying and project management.</p>
 				</div>
-				<div class="padding-3-i">
-					<p class='para-intro'>Our goal is to provide client-oriented services to develop professional, scientifically-informed solutions to the many complex challenges faced by strategic and operational decision-makers every day.</p>
+				<div class="">
+					<p class='para-intro justify'>Our goal is to provide client-oriented services to develop professional, scientifically-informed solutions to the many complex challenges faced by strategic and operational decision-makers every day.</p>
 				</div>
 			</div>
 
 			<div id="divider-gradient" class="divider-padding-1x"></div>
-
 			<div class="grid-one grid-gap-none">
 				<!-- <div style="with-kburns"> -->
-				<!-- <img id="placeholder1" class="img-shadow" scr="agizo-solutions/img/02-building-1920x540.jpg"> -->
-				<div id="placeholder1" class="img-shadow"></div>
+				<div id="placeholder-buildings" class="img-shadow"></div>
 			</div>
 		</section>
 
 
 		<main id="ourServices">
-			<!-- 1 -->
-			<section class='bg-white'>
+			<!-- 01 -->
+			<section class='bg-white drop-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class='gutter-auto padding-4-i'>
@@ -224,11 +261,11 @@
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div id="our-services1" class="img-shadow"></div>
+							<div id="our-services1"></div>
 							<!--<div class='placeholder-img half-block img-shadow'>
 								<div class="align-left align-top">
 									<i class="fa fa-5x fa-image"></i>
-									<p class="subheading left padding-top-half-i">
+									<p class="h4 left padding-top-half-i">
 										Image<br>Placeholder<br>
 									</p>
 								</div>
@@ -237,23 +274,14 @@
 					</div>
 				<div class='empty-space empty-quart'></div>
 			</section>
-
-			<!-- 2 -->
-			<section class='bg-light'>
+			<!-- 02 -->
+			<section class='bg-light img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div class='vivify driveInLeft delay-1500'>
-							<div id="our-services2" class="img-shadow"></div>
-							<!--<div class='placeholder-img half-block img-shadow'>
-								<div class="align-right align-top">
-									<i class="fa fa-5x fa-image"></i>
-									<p class="subheading right padding-top-half-i" style="margin-right:-8px">
-										Image<br>Placeholder<br>
-									</p>
-								</div>
-							</div>-->
+							<div class='vivify driveInLeft delay-2500'>
+								<div id="our-services2"></div>
  							</div>
 						</div>
 						<div class='gutter-auto padding-4-i'>
@@ -276,9 +304,8 @@
 					</div>
 				<div class='empty-space empty-quart'></div>
 			</section>
-
-			<!-- 3 -->
-			<section class='bg-white'>
+			<!-- 03 -->
+			<section class='bg-white img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class='gutter-auto padding-4-i'>
@@ -296,7 +323,7 @@
 								We combine state of the art surveying technologies with years of surveying experience, to offer professional and affordable land surveying services.
 							</p>
 							<div class='empty-space empty-single'></div>
-							<a href='root/projects.html' class='btn btn-shadow-std'>Read More</a>
+							<a href='root/services.html#tab3[checked]' class='btn btn-shadow-std'>Read More</a>
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
@@ -305,14 +332,15 @@
 					</div>
 				<div class='empty-space empty-quart'></div>
 			</section>
-
-			<!-- 4 -->
-			<section class='bg-light'>
+			<!-- 04 -->
+			<section class='bg-light img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
-						<div class="super-centered-item padding-sides">
+						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div id="our-services4" class="img-responsive"></div>
+							<div class='vivify driveInLeft delay-4500'>
+								<div id="our-services4" class="img-responsive"></div>
+							</div>
 						</div>
 						<div class='gutter-auto padding-4-i'>
 							<h4 class='ci-font-agizo1'>OUR SERVICES</h4>
@@ -337,16 +365,16 @@
 		</main>
 
 
-    <section id="testimonial" class="section-container">
+    <section id='testimonial' class="section-container">
 			<div class="grid-one grid-gap-none">
-				<div id="placeholder2" class="img-shadow img-responsive">
-					<!-- <img id="placeholder2" class="img-shadow"> -->
+				<div id="placeholder-business" class="img-shadow img-responsive top-shadow">
+					<!-- <img id="placeholder-business" class="img-shadow"> -->
 					<div class="caption-overlay h1 select-none">
-						<span>We assist decision-makers<br>solve spatial planning problems...</span>
+						<span><em>We</em> assist decision-makers<br>&nbsp;solve spatial planning problems ...</span>
 					</div>
 				</div>
 				<div class="ci-fill-alt1 divider-padding-1x"></div>
-				<div class="ci-fill-alt2 divider-padding-2x"></div>
+				<div class="ci-fill-alt2 divider-padding-2x img-shadow"></div>
 
 				<div class="grid-one padding-top-2-i">
 					<div class="h4 ci-font-agizo3 margin-left-3-i">testimonial</div>
@@ -364,13 +392,13 @@
 					</p>
         </div>
         <div class="slides">
-          <q>Our company uses a systematic method of spatial planning in which geo-informatics and multi-criteria decision analysis tools . . .</q>
+          <q>Our company uses a systematic method of spatial planning in which geo-informatics and multi-criteria decision analysis tools ...</q>
           <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
 						<i class="fa fa-pull-right fa-2x fa-comment-alt gutter-right gutter-right neg-offset"></i>
 					</p>
         </div>
         <div class="slides">
-          <q>. . . are integrated to provide effective methods for rational decision-making processes in the public and private sectors.</q>
+          <q>... are integrated to provide effective methods for rational decision-making processes in the public and private sectors.</q>
           <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
 						<i class="fa fa-pull-right fa-2x fa-comment gutter-right gutter-right neg-offset"></i>
 					</p>
@@ -389,7 +417,7 @@
       </div>
 			<div class='empty-space empty-single'></div>
     </section>
-		<script>
+		<!-- <script>
 			var slideIndex = 1;
 			showSlides(slideIndex);
 			function plusSlides(n) {
@@ -417,24 +445,22 @@
 				slides[slideIndex - 1].style.display = "block";
 				dots[slideIndex - 1].className += " active";
 			}
-		</script>
+		</script> -->
 
-		<!-- <div class="grid-center">
-			<div class='placeholder-img full-width'>
+
+		<div class="grid-center pointer-noevents">
+			<div class='placeholder-img full-width img-shadow'>
 				<div class="center-i">
-					<br>
-					<i class="fa fa-5x fa-image"></i>
-					<p class="subheading padding-top-half-i">
-						Wide Image<br>Placeholder<br>
-					</p>
+					<br><br><i class="fa fa-5x fa-image"></i>
+					<p class="h4 ci-font-dark padding-top-half-i">Wide Image<br>Placeholder<br></p>
 				</div>
 			</div>
-		</div> -->
+		</div>
  		<div id="divider-gradient" class="divider-padding-2x"></div>
 
 
 		<footer id="footer">
-			<div class="grid-3-1-1 padding-3-i ci-font-whitesmoke">
+			<div class="grid-3-1-1 padding-3 padding-bottom-i ci-font-whitesmoke">
 				<div class="margin-left-i margin-right-2-i">
 					<h4 class="ci-font-agizo4">About</h4>
 					<div class='empty-space empty-half'></div>
@@ -457,49 +483,44 @@
 					<div>Tel:&emsp;+27 11 312 8598</div>
 					<div>Fax:&emsp;+27 86 598 0773</div>
 					<div>Mail:&emsp;
-						<a class="ci-font-whitesmoke" style="text-decoration:none;" href="mailto:info@agizo.co.za">info@agizo.co.za</a>
+						<a class="ci-font-whitesmoke" style="text-decoration:none;font-size:102%;" 
+								href="mailto:info@agizo.co.za">info@agizo.co.za</a>
 					</div>
 				</div>
 			</div>
 
- 			<div class="grid-two-one padding-1 padding-bottom-none-i ci-fill-darker">
+ 			<div class="grid-three-two padding-1 ci-fill-darker">
 				<div class="margin-left-2-i">
 					<h6 class="ci-font-whitesmoke left">&nbsp;Copyright <span class="ci-font-puregrey">&copy;</span> 2012&ndash;2018</h6>
+
+					<div class="breadcrumb h6 smaller padding-left-half-i negative-offset">
+						<!-- <div class="breadcrumb-item">
+							<a href="#header" class="underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
+						</div>
+						<div class="breadcrumb-item">
+							<a href="root/privacy.html" class="underline-on-hover">Terms of Use</a>
+						</div>
+						<div class="breadcrumb-item">
+							<a href="root/privacy.html#policies" class="underline-on-hover">Privacy *</a>
+							<a href="root/privacy.html#policies" class="breadcrumb-item"><span class="underline-on-hover">Privacy</span> *</a>
+						</div> -->
+						<a href="#header" class="breadcrumb-item underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
+						<a href="root/privacy.html" class="breadcrumb-item"><span class="underline-on-hover">Terms of Use</span></a>
+						<a href="root/privacy.html#policies" class="breadcrumb-item"><span class="underline-on-hover">Privacy</span> *</a>
+					</div>
 				</div>
-				<!--<div class="ci-font-whitesmoke padding-top-i">
-					<p class="h4" style="letter-spacing:0.2rem;">
-						Agizo Solutions (Pty) Ltd.<br>
-					</p>
-				</div>-->
-				<div class="padding-none-i">
-					<!-- <img id="agizo-logo-float" style="width:20rem;height:5rem;top:10%;"> -->
+
+				<div class="padding-none-i margin-left-3-i">
 					<div id="agizo-logo-float"></div>
 				</div>
 			</div>
-
- 			<div class="grid-one padding-1 padding-top-none-i ci-fill-darker negative-offset">
-				<div class="breadcrumb h6 smaller margin-left-3-i">
-					<!-- <div class="breadcrumb-item"><a href="#hero-section" class="hover-underline-animation" title="1">Home</a></div>
-					<div class="breadcrumb-item"><a href="root/services.html" class="hover-underline-animation">Services</a></div>
-					<div class="breadcrumb-item"><a href="root/projects.html" class="hover-underline-animation">Projects</a></div>
-					<div class="breadcrumb-item"><a href="root/aboutus.html" class="hover-underline-animation">About Us</a></div>
-					<div class="breadcrumb-item"><a href="root/contact.html" class="hover-underline-animation">Contact</a></div> -->
-					<!-- <div class="breadcrumb-item">Agizo Solutions (Pty) Ltd.</div> -->
-					<div class="breadcrumb-item">
-						<a href="#hero-section" class="hover-underline-animation">Agizo Solutions (Pty) Ltd.</a>
-					</div>
-					<div class="breadcrumb-item">
-						<a href="root/privacy.html" class="hover-underline-animation">Terms of Use&nbsp; &amp; &nbsp;Privacy Policy</a>
-					</div>
-					<!-- <div class="breadcrumb-item">
-						<a href="root/privacy.html" class="hover-underline-animation">Privacy Policy</a>
-					</div> -->
-				</div>
-			</div>
+			<div class='empty-space empty-half ci-fill-darker'></div>
 		</footer>
 
 	<!-- page-wrapper -->
 	</div>
 
+	<!-- placed at the end so pages load faster -->
+	<script type='text/javascript' src='js/scripts.js'></script>
 </body>
 </html>
