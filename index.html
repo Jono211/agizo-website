@@ -36,7 +36,7 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<script>
+	<!-- <script>
 		//  When user scrolls - execute scrollingFunction
 		var prevScrollPos = window.pageYOffset;
 		window.onscroll = function () { scrollingFunction() };
@@ -53,19 +53,19 @@
 				document.getElementById("scrollToTop").style.display = "none";
 			}
 		}
-	</script>
+	</script> -->
 
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<script>
+	<!-- <script>
 		// When user clicks the button, scroll to the top
 		function toTopFunction() {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;	}
-	</script>
+	</script> -->
 
 
 	<div id="homePage" class="page-wrapper debuger">
@@ -74,16 +74,16 @@
 			<a href="#footer" class="pointer geometric">
 				<div id="agizo-text-logo"></div>
 			</a>
-			<a href="#hero-picture" class="-underline-inanimate gutter-auto ci-font-white">Home</a>
-			<a href="root/services.html" class="hover-underline-animation">Services</a>
-			<a href="root/projects.html" class="hover-underline-animation">Projects</a>
-			<a href="root/aboutus.html" class="hover-underline-animation">About Us</a>
-			<a href="root/contact.html" class="hover-underline-animation">Contact</a>
+			<a href="#hero-picture" class="underline-is-fixed gutter-auto ci-font-white">Home</a>
+			<a href="root/services.html" class="underline-on-hover">Services</a>
+			<a href="root/projects.html" class="underline-on-hover">Projects</a>
+			<a href="root/aboutus.html" class="underline-on-hover">About Us</a>
+			<a href="root/contact.html" class="underline-on-hover">Contact</a>
 			<a href="root/devpage.html" class="padding-left-i margin-right-2-i">
 				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
 			</a>
 		</nav>
-		<script type='text/javascript'>
+		<!-- <script type='text/javascript'>
 			//var prevScrollPos = window.pageYOffset;
 			function hideOnScroll () {
 				var navbar = document.getElementById('navigate');
@@ -106,7 +106,7 @@
 				}
 			}
 			window.addEventListener('scroll', hideOnScroll);
-		</script>
+		</script> -->
 
  		<hr id="header" class='separator-no-padding'>
 
@@ -419,7 +419,7 @@
       </div>
 			<div class='empty-space empty-single'></div>
     </section>
-		<script>
+		<!-- <script>
 			var slideIndex = 1;
 			showSlides(slideIndex);
 			function plusSlides(n) {
@@ -447,7 +447,7 @@
 				slides[slideIndex - 1].style.display = "block";
 				dots[slideIndex - 1].className += " active";
 			}
-		</script>
+		</script> -->
 
 
 		<div class="grid-center pointer-noevents">
@@ -497,13 +497,13 @@
 
 					<div class="breadcrumb h6 smaller padding-left-half-i negative-offset">
 						<div class="breadcrumb-item">
-							<a href="#header" class="hover-underline-animation">Agizo Solutions (Pty) Ltd.</a>
+							<a href="#header" class="underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
 						</div>
 						<div class="breadcrumb-item">
-							<a href="root/privacy.html" class="hover-underline-animation">Terms of Use</a>
+							<a href="root/privacy.html" class="underline-on-hover">Terms of Use</a>
 						</div>
 						<div class="breadcrumb-item">
-							<a href="root/privacy.html#policies" class="hover-underline-animation">Privacy *</a>
+							<a href="root/privacy.html#policies" class="underline-on-hover">Privacy *</a>
 						</div>
 					</div>
 				</div>
@@ -519,4 +519,5 @@
 	</div>
 
 </body>
+	<script type='text/javascript' src='js/scripts.js'></script>
 </html>
