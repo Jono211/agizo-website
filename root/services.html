@@ -13,8 +13,8 @@
 		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Light.woff" as="font" crossorigin type="font/woff"/>
 		<!-- <link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff" as="font" crossorigin type="font/woff"/>
 		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff" as="font" crossorigin type="font/woff"/> -->
-		<link rel="preload" href="../fonts/Poppins-Bold.ttf" as="font" crossorigin type="font/ttf"/>
 		<link rel="preload" href="../fonts/Poppins-Semibold.ttf" as="font" crossorigin type="font/ttf"/>
+		<link rel="preload" href="../fonts/Poppins-Bold.ttf" as="font" crossorigin type="font/ttf"/>
 		<!-- <link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'> -->
 
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css"/>
@@ -34,59 +34,18 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<!-- <script>
-		//  When user scrolls - execute scrollingFunction
-		window.onscroll = function () { scrollingFunction() };
-		function scrollingFunction() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			var scrolled = (winScroll / height) * 100;
-			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
-			// after scrolling 99px, show the toTop icon
-			if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-				document.getElementById("scrollToTop").style.display = "block";
-			} else {
-				document.getElementById("scrollToTop").style.display = "none";
-			}
-		}
-	</script> -->
-
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<!-- <script>
-		// When user clicks the button, scroll to the top
-		function toTopFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;	}
-	</script> -->
-
 
 	<div class="page-wrapper debuger">
 
-		<!-- <div><a href="#footer" class="pointer"><div id="agizo-text-logo"></div></a></div>
-		<nav id="navigate" class="main-nav subheading ci-font-dark">
-			<ul>
-				<li></li>
-				<li><a href="../index.html" class="underline-on-hover">Home</a></li>
-				<li><a href="#" class="pointer-noevents activate-border">Services</a></li>
-				<li><a href="projects.html" class="underline-on-hover">Projects</a></li>
-				<li><a href="aboutus.html" class="underline-on-hover">About Us</a></li>
-				<li><a href="contact.html" class="underline-on-hover">Contact</a></li>
-				<li>
-					<a href="devpage.html" class="padding-left-i margin-right-2-i" style="padding-top:.75rem;">
-						<i class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div id="semi-transparent-bg"></div> -->
 		<nav id="navigate" class="main-nav subheading antialias">
-			<a href="#footer" class="default geometric"><div id="agizo-text-logo"></div></a>
+			<a href="#header" class="default geometric"><div id="agizo-text-logo"></div></a>
 			<a href="../index.html" class="underline-on-hover">Home</a>
-			<a href="#header" class="underline-is-fixed gutter-auto ci-font-white">Services</a>
+			<a href="#footer" class="underline-is-fixed gutter-auto ci-font-white">Services</a>
 			<a href="projects.html" class="underline-on-hover">Projects</a>
 			<a href="aboutus.html" class="underline-on-hover">About Us</a>
 			<a href="contact.html" class="underline-on-hover">Contact</a>
@@ -94,6 +53,8 @@
 				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
 			</a>
 		</nav>
+
+
  		<hr id="header" class='separator-no-padding'>
 
 		<header>
@@ -110,107 +71,108 @@
  		</header>
 
 
-    <section class="ci-fill-purewhite">
-			<div class="grid-one padding-3-i margin-left-2-i">
-				<div class="subheading ci-font-agizo3">what we do &nbsp; (very well)</div>
-				<div class='empty-space empty-quart'></div>
-				<!-- <div class="semi-transparent-border" style="margin-left:-2rem;width:100%;"></div> -->
+		<main id="ourServices">
+			<section class="ci-fill-purewhite">
+				<div class="grid-one padding-3-i margin-left-2-i">
+					<div class="subheading ci-font-agizo3">what we do &nbsp; (very well)</div>
+					<div class='empty-space empty-quart'></div>
+					<!-- <div class="semi-transparent-border" style="margin-left:-2rem;width:100%;"></div> -->
 
-				<div id="tabsStart" class="semi-transparent-border width-100 pull-left gutter-auto"></div>
-				<!-- <h2>Our Services</h2><br> -->
-				<div class="tabs">
-					<input type="radio" name="tab-group" id="tab1" checked aria-hidden="true">
-					<label for="tab1" aria-hidden="true" class="h6">SPATIAL</label>
-					<div class='measure-wide margin-left-4-i'>
-						<h2 class="padding-top-2-i">Integrated Development &amp; Spatial Planning</h2><br>
-						<div class='paragraph-divider pull-left' style="border-color:#e46;"></div>
-						<p class='para-intro'>An integral part of urban and regional planning</p>
-						<p class='para-std'>Agizo Solutions seeks to contribute to the transformation of the space economy by providing integrated development planning solutions.</p>
-						<p>Integrated development and spatial planning services form an integral part of urban and regional planning. Its primary function is to necessitate equitable utilisation of scarce resources in society, particularly land. As a multi-pronged development approach, spatial planning engages with issues aligned to economic development, social development, land-use management, environmental planning and infrastructure development. As a rational decision-making process, spatial planning is dependent on the formulation of credible and implementable planning tools.</p>
-						<p class='para'>These tools include:</p>
-						<ul class="bullet" style="margin-top:-.75rem;">
-							<li>&nbsp; Spatial development frameworks</li>
-							<li>&nbsp; Integrated development plans</li>
-							<li>&nbsp; Environmental planning frameworks</li>
-							<li>&nbsp; Local economic development frameworks</li>
-						</ul>
-						<br>
-						<p class='para'>Spatial planning for the public sector seeks to influence the future spatial distribution of activities and land use management. In a developing country like South Africa, spatial planning has a mammoth task of fostering a balance between demands for socio-spatial justice with the need to protect the environment and economic growth. Spatial planning is therefore an important lever for promoting sustainable development and improving the quality of life.</p>
-						<p>Agizo Solutions seeks to contribute to the transformation of the space economy by providing integrated development planning solutions.  The company uses a systematic method of spatial planning in which geo-informatics and multi-criteria decision analysis tools are integrated to provide effective tools rational decision-making processes in the public and private sector.</p>
-						<p>Agizo uses cutting-edge scientific approaches to provide national, regional and municipal governments with the following development planning solutions:</p>
-						<ul class="bullet" style="margin-top:-.75rem;">
-							<li>&nbsp; Integrated Development Plans (IDP) and Spatial Development Frameworks (SDF)</li>
-							<li>&nbsp; Provincial Growth and Development Strategies (PGDSS) and Spatial Plans</li>
-							<li>&nbsp; Implementation of spatial planning and land use management (SPLUMA) tools</li>
-							<li>&nbsp; Identification of suitable land for specific uses</li>
-							<li>&nbsp; Regional and municipal economic development plans</li>
-							<li>&nbsp; Environmental planning instruments and impact assessments</li>
-							<li>&nbsp; Formulation of integrated development planning policies and frameworks</li>
-						</ul>
-						<br>
-						<p class='para'>Agizo Solutions also provides the private sector with spatial planning services such as Identification, selection and differentiation of markets, retail store catchments and the distribution of services and resources.</p>
-						<br>
-					</div>
+					<div id="tabsStart" class="semi-transparent-border width-100 pull-left gutter-auto"></div>
+					<!-- <h2>Our Services</h2><br> -->
+					<div class="tabs">
+						<input type="radio" name="tab-group" id="tab1" checked aria-hidden="true">
+						<label for="tab1" aria-hidden="true" class="h6">SPATIAL</label>
+						<div class='measure-wide margin-left-4-i'>
+							<h2 class="padding-top-2-i">Integrated Development &amp; Spatial Planning</h2><br>
+							<div class='paragraph-divider pull-left' style="border-color:#e46;"></div>
+							<p class='para-intro'>An integral part of urban and regional planning</p>
+							<p class='para-std'>Agizo Solutions seeks to contribute to the transformation of the space economy by providing integrated development planning solutions.</p>
+							<p>Integrated development and spatial planning services form an integral part of urban and regional planning. Its primary function is to necessitate equitable utilisation of scarce resources in society, particularly land. As a multi-pronged development approach, spatial planning engages with issues aligned to economic development, social development, land-use management, environmental planning and infrastructure development. As a rational decision-making process, spatial planning is dependent on the formulation of credible and implementable planning tools.</p>
+							<p class='para'>These tools include:</p>
+							<ul class="bullet" style="margin-top:-.75rem;">
+								<li>&nbsp; Spatial development frameworks</li>
+								<li>&nbsp; Integrated development plans</li>
+								<li>&nbsp; Environmental planning frameworks</li>
+								<li>&nbsp; Local economic development frameworks</li>
+							</ul>
+							<br>
+							<p class='para'>Spatial planning for the public sector seeks to influence the future spatial distribution of activities and land use management. In a developing country like South Africa, spatial planning has a mammoth task of fostering a balance between demands for socio-spatial justice with the need to protect the environment and economic growth. Spatial planning is therefore an important lever for promoting sustainable development and improving the quality of life.</p>
+							<p>Agizo Solutions seeks to contribute to the transformation of the space economy by providing integrated development planning solutions.  The company uses a systematic method of spatial planning in which geo-informatics and multi-criteria decision analysis tools are integrated to provide effective tools rational decision-making processes in the public and private sector.</p>
+							<p>Agizo uses cutting-edge scientific approaches to provide national, regional and municipal governments with the following development planning solutions:</p>
+							<ul class="bullet" style="margin-top:-.75rem;">
+								<li>&nbsp; Integrated Development Plans (IDP) and Spatial Development Frameworks (SDF)</li>
+								<li>&nbsp; Provincial Growth and Development Strategies (PGDSS) and Spatial Plans</li>
+								<li>&nbsp; Implementation of spatial planning and land use management (SPLUMA) tools</li>
+								<li>&nbsp; Identification of suitable land for specific uses</li>
+								<li>&nbsp; Regional and municipal economic development plans</li>
+								<li>&nbsp; Environmental planning instruments and impact assessments</li>
+								<li>&nbsp; Formulation of integrated development planning policies and frameworks</li>
+							</ul>
+							<br>
+							<p class='para'>Agizo Solutions also provides the private sector with spatial planning services such as Identification, selection and differentiation of markets, retail store catchments and the distribution of services and resources.</p>
+							<br>
+						</div>
 
-					<input type="radio" name="tab-group" id="tab2" aria-hidden="true">
-					<label for="tab2" aria-hidden="true" class="h6">GEO-INFO</label>
-					<div class='measure-wide margin-left-4-i'>
-						<h2 class="padding-top-2-i">Geo-Informatic Sciences (GIS)</h2><br>
-						<div class='paragraph-divider pull-left' style="border-color:#cc3;"></div>
-						<p class='para-intro'>Integrating GIS and multi-criteria / objective decision analysis to address <br>complex challenges</p>
-						<p>Geo-informatics is concerned with the development and innovative use of solutions to help decision makers with spatial planning and problem-solving. Agizo Solutions unique strengths in integrating GIS and Multi Criteria/Objective Decision Analysis provides powerful tools for addressing the most complex problems faced by decision makers in land related matters. This scientific approach has assisted national, provincial and local governments in formulating integrated development plans, spatial development frameworks, and land use monitoring including other numerous applications.</p>
-						<p class='para'>Agizo Solutions geo-informatics capability has undertaken projects that supported organisations involved in the following disciplines/sectors:</p>
-						<ul class="bullet" style="margin-top:-.75rem;">
-							<li>&nbsp; Spatial Planning</li>
-							<li>&nbsp; Urban Planning and Land Use Management</li>
-							<li>&nbsp; Public Health</li>
-							<li>&nbsp; Environmental Modelling and Analysis</li>
-							<li>&nbsp; Transport Network Planning and Management</li>
-							<li>&nbsp; Agriculture</li>
-							<li>&nbsp; Business Location Planning</li>
-						</ul>
-						<br>
-					</div>
+						<input type="radio" name="tab-group" id="tab2" aria-hidden="true">
+						<label for="tab2" aria-hidden="true" class="h6">GEO-INFO</label>
+						<div class='measure-wide margin-left-4-i'>
+							<h2 class="padding-top-2-i">Geo-Informatic Sciences (GIS)</h2><br>
+							<div class='paragraph-divider pull-left' style="border-color:#cc3;"></div>
+							<p class='para-intro'>Integrating GIS and multi-criteria / objective decision analysis to address <br>complex challenges</p>
+							<p>Geo-informatics is concerned with the development and innovative use of solutions to help decision makers with spatial planning and problem-solving. Agizo Solutions unique strengths in integrating GIS and Multi Criteria/Objective Decision Analysis provides powerful tools for addressing the most complex problems faced by decision makers in land related matters. This scientific approach has assisted national, provincial and local governments in formulating integrated development plans, spatial development frameworks, and land use monitoring including other numerous applications.</p>
+							<p class='para'>Agizo Solutions geo-informatics capability has undertaken projects that supported organisations involved in the following disciplines/sectors:</p>
+							<ul class="bullet" style="margin-top:-.75rem;">
+								<li>&nbsp; Spatial Planning</li>
+								<li>&nbsp; Urban Planning and Land Use Management</li>
+								<li>&nbsp; Public Health</li>
+								<li>&nbsp; Environmental Modelling and Analysis</li>
+								<li>&nbsp; Transport Network Planning and Management</li>
+								<li>&nbsp; Agriculture</li>
+								<li>&nbsp; Business Location Planning</li>
+							</ul>
+							<br>
+						</div>
 
-					<input type="radio" name="tab-group" id="tab3" aria-hidden="true">
-					<label for="tab3" aria-hidden="true" class="h6">SURVEY</label>
-					<div class='measure-wide margin-left-4-i'>
-						<h2 class="padding-top-2-i">Land Surveying &amp; Engineering</h2><br>
-						<div class='paragraph-divider pull-left' style="border-color:#6b4;"></div>
-						<p class='para-intro'>Agizo Solutions combines state of the art surveying technologies with years of <br>surveying experience</p>
-						<p class='para-std'>Agizo offers professional and affordable land surveying services</p>
-						<p>Agizo Solutions combines state of the art surveying technologies with years of surveying experience, in order to offer professional and affordable land surveying services.</p>
-						<p class='para'>We provide the following services:</p>
-						<ul class="bullet" style="margin-top:-.75rem;">
-							<li>&nbsp; Boundary Surveys</li>
-							<li>&nbsp; Topographic Surveys</li>
-							<li>&nbsp; Control Surveys</li>
-							<li>&nbsp; GIS Mapping Surveys</li>
-							<li>&nbsp; Subdivisions Surveys</li>
-							<li>&nbsp; Development Planning Surveys</li>
-							<li>&nbsp; Engineering Surveys</li>
-							<li>&nbsp; Utility Inventory Surveys</li>
-						</ul>
-						<br>
-					</div>
+						<input type="radio" name="tab-group" id="tab3" aria-hidden="true">
+						<label for="tab3" aria-hidden="true" class="h6">SURVEYS</label>
+						<div class='measure-wide margin-left-4-i'>
+							<h2 class="padding-top-2-i">Land Surveying &amp; Engineering</h2><br>
+							<div class='paragraph-divider pull-left' style="border-color:#6b4;"></div>
+							<p class='para-intro'>Agizo Solutions combines state of the art surveying technologies with years of <br>surveying experience</p>
+							<p class='para-std'>Agizo offers professional and affordable land surveying services</p>
+							<p>Agizo Solutions combines state of the art surveying technologies with years of surveying experience, in order to offer professional and affordable land surveying services.</p>
+							<p class='para'>We provide the following services:</p>
+							<ul class="bullet" style="margin-top:-.75rem;">
+								<li>&nbsp; Boundary Surveys</li>
+								<li>&nbsp; Topographic Surveys</li>
+								<li>&nbsp; Control Surveys</li>
+								<li>&nbsp; GIS Mapping Surveys</li>
+								<li>&nbsp; Subdivisions Surveys</li>
+								<li>&nbsp; Development Planning Surveys</li>
+								<li>&nbsp; Engineering Surveys</li>
+								<li>&nbsp; Utility Inventory Surveys</li>
+							</ul>
+							<br>
+						</div>
 
-					<input type="radio" name="tab-group" id="tab4" aria-hidden="true">
-					<label for="tab4" aria-hidden="true" class="h6">DRONES</label>
-					<div class='measure-wide margin-left-4-i'>
-						<h2 class="padding-top-2-i">Drone Mapping &amp; 3D Modelling</h2><br>
-						<div class='paragraph-divider pull-left' style="border-color:#6ac;"></div>
-						<p class='para-intro'>Providing professional aerial mapping, survey and inspection services using our <br>cutting-edge drone technology</p>
-						<p class='para-std'>We provide professional services using Unmanned Aerial Vehicles (UAV’s or “drones”) to small, medium and large projects.</p>
-						<p>Whether you are looking for visual inspections, high-resolution 3D aerial maps, stockpile volume analysis or anything else requiring airborne sensing, we have experienced staff and the best equipment to reliably deliver accurate and high-quality outputs.</p>
-						<p>Agizo Aerial Services provides aerial mapping and inspection services to the survey, forestry, precision agriculture, industrial and natural resource management industries. We are also well-equipped for any drone related work from general aerial photography through to challenges requiring custom solutions. We have capacity and flexibility to deliver the most challenging projects at short notice.</p>
-						<p>We are registered with South African Civil Aviation Authority and we maintain the strictest safety systems and are fully insured for public liability and professional indemnity.</p>
-						<br>
+						<input type="radio" name="tab-group" id="tab4" aria-hidden="true">
+						<label for="tab4" aria-hidden="true" class="h6">DRONES</label>
+						<div class='measure-wide margin-left-4-i'>
+							<h2 class="padding-top-2-i">Drone Mapping &amp; 3D Modelling</h2><br>
+							<div class='paragraph-divider pull-left' style="border-color:#6ac;"></div>
+							<p class='para-intro'>Providing professional aerial mapping, survey and inspection services using our <br>cutting-edge drone technology</p>
+							<p class='para-std'>We provide professional services using Unmanned Aerial Vehicles (UAV’s or “drones”) to small, medium and large projects.</p>
+							<p>Whether you are looking for visual inspections, high-resolution 3D aerial maps, stockpile volume analysis or anything else requiring airborne sensing, we have experienced staff and the best equipment to reliably deliver accurate and high-quality outputs.</p>
+							<p>Agizo Aerial Services provides aerial mapping and inspection services to the survey, forestry, precision agriculture, industrial and natural resource management industries. We are also well-equipped for any drone related work from general aerial photography through to challenges requiring custom solutions. We have capacity and flexibility to deliver the most challenging projects at short notice.</p>
+							<p>We are registered with South African Civil Aviation Authority and we maintain the strictest safety systems and are fully insured for public liability and professional indemnity.</p>
+							<br>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</main>
 
-		<!-- <div class="section-splitter width-90 margin-left-4-i"></div> -->
 
 			<div class='empty-space empty-single'></div>
 			<a class='gutter-auto' href="#tabsStart">
@@ -221,30 +183,25 @@
 		<div class="ci-fill-agizo2 divider-padding-2x"></div>
 		<div class="ci-fill-agizo4 divider-padding-1x"></div>
 
+
 		<footer id="footer">
-			<div class="grid-3-1-1 padding-3-i ci-font-whitesmoke">
-				<div class="margin-left-i">
-					<h4 class="ci-font-alt1">About</h4>
-					<div class='empty-space empty-half'></div>
+			<div class="grid-3-1-1 padding-3 padding-bottom-i ci-font-whitesmoke">
+				<div class="margin-left-i padding-right-2-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">ABOUT</h4>
 					<p class="para-std ci-font-whitesmoke">
-						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, 
-						land-use planning and management, development planning, geographic information systems, 
-						land surveying and project management.
+						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, land-use planning and management, development planning, geographic information systems, land surveying and project management.
 					</p>
 				</div>
-				<div class="margin-left-3-i">
-					<h4 class="ci-font-alt1">Visit</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">VISIT</h4>
 					<div>6 East Street</div>
 					<div>Halfway Gardens</div>
 					<div>Midrand, 1686</div>
 				</div>
-				<div class="">
-					<h4 class="ci-font-alt1">Contact</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">CONTACT</h4>
 					<div>Tel:&emsp;+27 11 312 8598</div>
 					<div>Fax:&emsp;+27 86 598 0773</div>
-					<!-- <div>Mail:&emsp;<a href="mailto:info@agizo.co.za" style="text-decoration:none;color:whitesmoke;">info@agizo.co.za</a></div> -->
 					<div>Mail:&emsp;
 						<a class="ci-font-whitesmoke" style="text-decoration:none;font-size:102%;" 
 								href="mailto:info@agizo.co.za">info@agizo.co.za</a>
@@ -252,32 +209,24 @@
 				</div>
 			</div>
 
- 			<div class="grid-two-one padding-1 padding-bottom-none-i ci-fill-darker">
-				<div class="ci-font-whitesmoke margin-left-2-i">
+ 			<div class="grid-three-two padding-1 ci-fill-darker">
+				<div class="margin-left-2-i">
 					<h6 class="ci-font-whitesmoke left">&nbsp;Copyright <span class="ci-font-puregrey">&copy;</span> 2012&ndash;2018</h6>
-				</div>
-				<div class="padding-none-i">
-					<div id="agizo-logo-float"></div>
-				</div>
-			</div>
 
- 			<div class="grid-one padding-1 padding-top-none-i ci-fill-darker negative-offset">
-				<div class="breadcrumb h6 smaller margin-left-3-i">
-					<!-- <div class="breadcrumb-item">Agizo Solutions (Pty) Ltd.</div> -->
-					<div class="breadcrumb-item">
-						<a href="../index.html" class="underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
-					</div>
-					<div class="breadcrumb-item">
-						<a href="privacy.html" class="underline-on-hover">Terms of Use</a>
-					</div>
-					<div class="breadcrumb-item">
-						<a href="privacy.html#policies" class="underline-on-hover">Privacy*</a>
+					<div class="breadcrumb h6 smaller padding-left-half-i negative-offset">
+						<a href="../index.html" class="breadcrumb-item underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
+						<a href="privacy.html" class="breadcrumb-item"><span class="underline-on-hover">Terms of Use</span></a>
+						<a href="privacy.html#policies" class="breadcrumb-item"><span class="underline-on-hover">Privacy</span> *</a>
 					</div>
 				</div>
+
+				<div class="padding-none-i margin-left-3-i">
+					<div id="agizo-logo-float"></div></div>
 			</div>
+			<div class='empty-space empty-half ci-fill-darker'></div>
 		</footer>
 
-	</div>
+	</div> <!-- page-wrapper -->
 	<!-- placed at the end so pages load faster -->
 	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>

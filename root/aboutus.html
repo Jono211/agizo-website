@@ -33,35 +33,11 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<script>
-		//  When user scrolls - execute scrollingFunction
-		window.onscroll = function () { scrollingFunction() };
-		function scrollingFunction() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			var scrolled = (winScroll / height) * 100;
-			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
-			// after scrolling 99px, show the toTop icon
-			if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-				document.getElementById("scrollToTop").style.display = "block";
-			} else {
-				document.getElementById("scrollToTop").style.display = "none";
-			}
-		}
-	</script>
-
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<script>
-		// When user clicks the button, scroll to the top
-		function toTopFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;	}
-	</script>
-
 
 	<div class="page-wrapper debuger">
 
@@ -78,6 +54,8 @@
 			</ul>
 		</nav>
 		<div id="semi-transparent-bg"></div>
+
+
  		<hr class='separator-no-padding'>
 
 		<header>
@@ -201,54 +179,51 @@
 			</div>
 		</div>
 
+
 		<footer id="footer">
-			<div class="grid-3-1-1 padding-3-i ci-font-whitesmoke">
-				<div class="margin-left-i">
-					<h4 class="ci-font-alt1">About</h4>
-					<div class='empty-space empty-half'></div>
+			<div class="grid-3-1-1 padding-3 padding-bottom-i ci-font-whitesmoke">
+				<div class="margin-left-i padding-right-2-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">ABOUT</h4>
 					<p class="para-std ci-font-whitesmoke">
-						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, 
-						land-use planning and management, development planning, geographic information systems, 
-						land surveying and project management.
+						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, land-use planning and management, development planning, geographic information systems, land surveying and project management.
 					</p>
 				</div>
-				<div class="margin-left-3-i">
-					<h4 class="ci-font-alt1">Visit</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">VISIT</h4>
 					<div>6 East Street</div>
 					<div>Halfway Gardens</div>
 					<div>Midrand, 1686</div>
 				</div>
-				<div class="">
-					<h4 class="ci-font-alt1">Contact</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">CONTACT</h4>
 					<div>Tel:&emsp;+27 11 312 8598</div>
 					<div>Fax:&emsp;+27 86 598 0773</div>
-					<div>Mail:&emsp;info@agizo.co.za</div>
+					<div>Mail:&emsp;
+						<a class="ci-font-whitesmoke" style="text-decoration:none;font-size:102%;" 
+								href="mailto:info@agizo.co.za">info@agizo.co.za</a>
+					</div>
 				</div>
 			</div>
 
- 			<div class="grid-two-one padding-1 padding-bottom-none-i ci-fill-darker">
-				<div class="ci-font-whitesmoke margin-left-2-i">
+ 			<div class="grid-three-two padding-1 ci-fill-darker">
+				<div class="margin-left-2-i">
 					<h6 class="ci-font-whitesmoke left">&nbsp;Copyright <span class="ci-font-puregrey">&copy;</span> 2012&ndash;2018</h6>
-				</div>
-				<div class="padding-none-i">
-					<div id="agizo-logo-float"></div>
-				</div>
-			</div>
 
- 			<div class="grid-one padding-1 padding-top-none-i ci-fill-darker negative-offset">
-				<div class="breadcrumb h6 smaller margin-left-3-i">
-					<div class="breadcrumb-item">
-						<a href="../index.html" class="underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
-					</div>
-					<div class="breadcrumb-item">
-						<a href="privacy.html" class="underline-on-hover">Terms of Use&nbsp; &amp; &nbsp;Privacy Policy</a>
+					<div class="breadcrumb h6 smaller padding-left-half-i negative-offset">
+						<a href="../index.html" class="breadcrumb-item underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
+						<a href="privacy.html" class="breadcrumb-item"><span class="underline-on-hover">Terms of Use</span></a>
+						<a href="privacy.html#policies" class="breadcrumb-item"><span class="underline-on-hover">Privacy</span> *</a>
 					</div>
 				</div>
+
+				<div class="padding-none-i margin-left-3-i">
+					<div id="agizo-logo-float"></div></div>
 			</div>
+			<div class='empty-space empty-half ci-fill-darker'></div>
 		</footer>
 
-	</div>
+	</div> <!-- page-wrapper -->
+	<!-- placed at the end so pages load faster -->
+	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>
 </html>
