@@ -632,6 +632,8 @@ h1 .pagetitle {
     text-align: center;
     line-height: normal;
     text-decoration: none;
+	font-family: Poppins !important;
+	font-weight: 500 !important;
     font-size: .8rem !important;
     letter-spacing: .05rem !important;
     padding: .67rem .2rem .33rem;
