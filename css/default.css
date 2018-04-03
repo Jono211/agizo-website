@@ -604,6 +604,12 @@ h1 .pagetitle {
 
 /* navigation
 -------------------------------------------------------------- */
+nav#navigate.main-nav ~ a {
+  text-decoration: none;
+	font-family: Poppins !important;
+	font-weight: 500 !important;
+  font-size: .8rem !important;
+  letter-spacing: .05rem !important; }
 #navigate.main-nav {
   display: -ms-grid;
 	display: grid;
