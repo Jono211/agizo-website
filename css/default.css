@@ -790,7 +790,11 @@ h1 .pagetitle {
 
 #placeholder-business {
   /* resize: both !important; */
-  background-image: url('../img/07-business-1440px.jpg'); }
+  /* background-image: url('../img/07-business-1440px.jpg');  */
+  background-image: 
+		url('../img/semi-transparent.png'), 
+    url('../img/54-aerial-1280px.jpg');
+}
 
 
 #placeholder-documents {
@@ -798,7 +802,9 @@ h1 .pagetitle {
 	height: 22rem !important;
 	max-height: 22rem !important;
 	background-position: center bottom !important;
-  background-image: url('../img/22-documents-1440x960.jpg'); }
+  background-image: 
+		url('../img/semi-transparent.png'), 
+    url('../img/22-documents-1440x960.jpg'); }
 
 #placeholder-buildingsFull {
 	height: 99vh !important;
@@ -816,7 +822,6 @@ h1 .pagetitle {
 		url('../img/semi-transparent.png'), 
     url('../img/57-buildings-1280x853.jpg'); }
   /* background-image: url('file:///d:/web-development/agizo-solutions/img/23-news-1440x954.jpg'); */
-  /* background-image: url('file:///d:/web-development/agizo-solutions/img/54-aerial-1280px.jpg'); */
 
 #placeholder-portCustoms {
 	height: 30rem !important;
@@ -896,6 +901,12 @@ h1 .pagetitle {
 	/* background-position: -6rem 2rem; */
   background-image: url('../img/06-drone-995x735.png'); }
 
+
+@media screen and (max-width: 480px) {
+  [id^='our-services'] {
+    display: none !important;
+  }
+}
 
 /* .animate-when-visible:hover {
   backface-visibility: hidden;
@@ -1118,6 +1129,19 @@ h1 .pagetitle {
 	width: 20rem;
   top: 10%; }
 
+#agizo-logo-fixed {
+	background-image: url('../img/agizo-white-uai-258x250.png');
+	background-position: auto;
+	background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  z-index: 6;
+  height: 5.1875rem;
+	width: 5.375rem;
+  bottom: 7%;
+  right: 3%; }
+
 
 /* layered-captions
 -------------------------------------------------------------- */
@@ -1212,6 +1236,9 @@ h1 .pagetitle {
 
 .bg-white { background-color: #fff !important; }
 .bg-light { background-color: #ddd !important; }
+
+.bg-whitish { background-color: whitesmoke !important; }
+.bg-lighter { background-color: lightgrey !important; }
 
 
 #divider-gradient { 
