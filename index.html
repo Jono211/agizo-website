@@ -5,25 +5,22 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff"/>
-		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro-Display/SF-Pro-Display-Light.woff"/>
-		<!-- <link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff" as="font" type="font/woff" crossorigin/> -->
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Heavy.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Bold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Semibold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Medium.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Regular.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Light.woff"/>
+		<!-- <link rel="preload" as="font" type="font/woff" crossorigin href="fonts/SF-Pro/SF-Pro-Display-Thin.woff"/> -->
 		<link rel="preload" as="font" type="font/ttf" crossorigin href="fonts/Poppins-Semibold.ttf"/>
 		<link rel="preload" as="font" type="font/ttf" crossorigin href="fonts/Poppins-Bold.ttf"/>
-		<!-- <link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'/> -->
-
+		<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Poppins'/> -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reboot.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/default.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/vivify.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="fonts/font-awesome/css/fontawesome-all.css"/>
-		<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/gridworx.css"/> -->
-		<link rel="icon" type="image/png" href="img/agizo-Icon-32x32.png" sizes="32x32"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="img/agizo-Icon-32x32.png"/>
 
 	<title>Agizo Solutions</title>
 </head>
@@ -54,7 +51,6 @@
 			}
 		}
 	</script> -->
-
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
@@ -67,12 +63,11 @@
 			document.documentElement.scrollTop = 0;	}
 	</script> -->
 
-
 	<div id="homePage" class="page-wrapper debuger">
 
 		<nav id="navigate" class="main-nav subheading antialias">
-			<a href="#footer" class="default geometric"><div id="agizo-text-logo"></div></a>
-			<a href="#header" class="underline-is-fixed --home gutter-auto ci-font-white">Home</a>
+			<a href="#header" class="default geometric"><div id="agizo-text-logo"></div></a>
+			<a href="#footer" class="underline-is-fixed --home gutter-auto ci-font-white">Home</a>
 			<a href="root/services.html" class="underline-on-hover">Services</a>
 			<a href="root/projects.html" class="underline-on-hover">Projects</a>
 			<a href="root/aboutus.html" class="underline-on-hover">About Us</a>
@@ -106,6 +101,7 @@
 			window.addEventListener('scroll', hideOnScroll);
 		</script> -->
 
+
  		<hr id="header" class='separator-no-padding'>
 
 		<header id="hero-picture">
@@ -123,7 +119,7 @@
 		<div class="ci-fill-agizo2 divider-padding-1x"></div>
 
 
-    <section id="fourIcons" class="bg-white">
+    <section id="fourIcons" class="bg-whitish">
 			<div class="grid-one padding-top-2-i">
 				<div class="h4 ci-font-agizo1 margin-left-3-i">WHAT WE DO</div>
 				<div class='empty-space empty-half'></div>
@@ -215,7 +211,7 @@
 		</section>
 
 
-    <section id="whoWeAre" class="bg-light top-shadow">
+    <section id="whoWeAre" class="bg-lighter top-shadow">
 			<div class="grid-one padding-top-4-i">
 				<div class="h4 ci-font-agizo2 margin-left-3-i">WHO WE ARE</div>
 				<div class="semi-transparent-border"></div>
@@ -233,14 +229,16 @@
 			<div id="divider-gradient" class="divider-padding-1x"></div>
 			<div class="grid-one grid-gap-none">
 				<!-- <div style="with-kburns"> -->
-				<div id="placeholder-buildings" class="img-shadow"></div>
+				<div id="placeholder-buildings" class="img-shadow">
+					<div id="agizo-logo-fixed"></div>
+				</div>
 			</div>
 		</section>
 
 
 		<main id="ourServices">
 			<!-- 01 -->
-			<section class='bg-white drop-shadow'>
+			<section class='bg-whitish drop-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class='gutter-auto padding-4-i'>
@@ -275,7 +273,7 @@
 				<div class='empty-space empty-quart'></div>
 			</section>
 			<!-- 02 -->
-			<section class='bg-light img-shadow'>
+			<section class='bg-lighter img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class="centered-item padding-sides">
@@ -305,7 +303,7 @@
 				<div class='empty-space empty-quart'></div>
 			</section>
 			<!-- 03 -->
-			<section class='bg-white img-shadow'>
+			<section class='bg-whitish img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class='gutter-auto padding-4-i'>
@@ -333,7 +331,7 @@
 				<div class='empty-space empty-quart'></div>
 			</section>
 			<!-- 04 -->
-			<section class='bg-light img-shadow'>
+			<section class='bg-lighter img-shadow'>
 				<div class='empty-space empty-quart'></div>
 					<div class='grid-two'>
 						<div class="centered-item padding-sides">
@@ -369,8 +367,9 @@
 			<div class="grid-one grid-gap-none">
 				<div id="placeholder-business" class="img-shadow img-responsive top-shadow">
 					<!-- <img id="placeholder-business" class="img-shadow"> -->
+					<div id="agizo-logo-fixed"></div>
 					<div class="caption-overlay h1 select-none">
-						<span><em>We</em> assist decision-makers<br>&nbsp;solve spatial planning problems ...</span>
+						<span><em>W</em>e assist decision-makers<br>&nbsp;solve spatial planning problems ...</span>
 					</div>
 				</div>
 				<div class="ci-fill-alt1 divider-padding-1x"></div>
@@ -388,19 +387,19 @@
         <div class="slides">
           <q>Our work facilitates the creation of spaces, that result in socially and economically vibrant communities.</q>
           <p class="author font-upper">&mdash; &nbsp; &nbsp;Matheri Kangethe
-						<i class="fa fa-pull-right fa-2x fa-quote-right gutter-right gutter-right neg-offset"></i>
+						<i class="fa fa-pull-right fa-2x fa-quote-right gutter-right neg-offset"></i>
 					</p>
         </div>
         <div class="slides">
-          <q>Our company uses a systematic method of spatial planning in which geo-informatics and multi-criteria decision analysis tools ...</q>
+          <q>Our company uses a systematic method of spatial planning in which geo-informatics and ...</q>
           <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
-						<i class="fa fa-pull-right fa-2x fa-comment-alt gutter-right gutter-right neg-offset"></i>
+						<i class="fa fa-pull-right fa-2x fa-comment-alt gutter-right neg-offset"></i>
 					</p>
         </div>
         <div class="slides">
-          <q>... are integrated to provide effective methods for rational decision-making processes in the public and private sectors.</q>
+          <q>... multi-criteria analysis tools are integrated to provide effective methods for rational decision-making.</q>
           <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
-						<i class="fa fa-pull-right fa-2x fa-comment gutter-right gutter-right neg-offset"></i>
+						<i class="fa fa-pull-right fa-2x fa-comment gutter-right neg-offset"></i>
 					</p>
         </div>
         <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
@@ -413,7 +412,6 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
       </div>
 			<div class='empty-space empty-single'></div>
     </section>

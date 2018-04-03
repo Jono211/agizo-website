@@ -5,22 +5,21 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Light.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" crossorigin type="font/truetype"/>
-		<link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css"/>
-		<link rel="stylesheet" type="text/css" media="screen" href="../css/reboot.css"/>
+		<!-- <link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Heavy.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Bold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Semibold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Medium.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Regular.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Light.woff"/> -->
+		<!-- <link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Thin.woff"/> -->
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="../fonts/Poppins-Semibold.ttf"/>
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="../fonts/Poppins-Bold.ttf"/>
+		<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Poppins'/> -->
+		<!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/reboot.css"/> -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/default.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="../fonts/font-awesome/css/fontawesome-all.css"/>
-		<link rel="icon" type="image/png" href="../img/agizo-Icon-32x32.png" sizes="32x32"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/agizo-Icon-32x32.png"/>
 
 	<title>Agizo Solutions</title>
 </head>
@@ -33,57 +32,35 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<script>
-		//  When user scrolls - execute scrollingFunction
-		window.onscroll = function () { scrollingFunction() };
-		function scrollingFunction() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			var scrolled = (winScroll / height) * 100;
-			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
-			// after scrolling 99px, show the toTop icon
-			if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-				document.getElementById("scrollToTop").style.display = "block";
-			} else {
-				document.getElementById("scrollToTop").style.display = "none";
-			}
-		}
-	</script>
-
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-3x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<script>
-		// When user clicks the button, scroll to the top
-		function toTopFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;	}
-	</script>
 
+	<div class="page-wrapper debuger">
 
-	<div class="page-wrapper">
-
-		<div><a href="../index.html" class="pointer"><div id="agizo-text-logo"></div></a></div>
-		<nav id="navigate" class="main-nav subheading ci-font-dark">
-			<ul>
-				<li></li>
-				<li><a href="../index.html" title="Agizo Solutions">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li></li>
-			</ul>
+		<nav id="navigate" class="main-nav subheading antialias">
+			<a href="#header" class="default geometric"><div id="agizo-text-logo"></div></a>
+			<a href="../index.html" class="underline-on-hover">Home</a>
+			<a href="services.html" class="underline-on-hover">Services</a>
+			<a href="projects.html" class="underline-on-hover">Projects</a>
+			<a href="aboutus.html" class="underline-on-hover">About Us</a>
+			<a href="contact.html" class="underline-on-hover">Contact</a>
+			<a href="#footer" class="padding-left-i margin-right-2-i">
+				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
+			</a>
 		</nav>
-		<!-- <img id="semi-transparent-bg" scr="../img/semi-transparent1.png"> -->
- 		<hr class='separator-no-padding'>
+
+
+ 		<hr id="header" class='separator-no-padding'>
 
     <div class="grid-markers --front"></div>
     <img src="../img/agizo-homepage-1342x5888.jpg" width="1342px" height="5888px" />
 
-  </div>
-
+ 		<hr id="footer" class='separator-no-padding'>
+	</div> <!-- page-wrapper -->
+	<!-- placed at the end so pages load faster -->
+	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>
 </html>

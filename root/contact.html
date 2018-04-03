@@ -5,22 +5,21 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Heavy.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Bold.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Semibold.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Medium.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Regular.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Light.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Thin.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="../fonts/SF-Pro-Display/SF-Pro-Display-Ultralight.woff" as="font" crossorigin type="font/woff"/>
-		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" crossorigin type="font/truetype"/>
-		<link href='//fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
-
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Heavy.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Bold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Semibold.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Medium.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Regular.woff"/>
+		<link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Light.woff"/>
+		<!-- <link rel="preload" as="font" type="font/woff" crossorigin href="../fonts/SF-Pro/SF-Pro-Display-Thin.woff"/> -->
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="../fonts/Poppins-Semibold.ttf"/>
+		<link rel="preload" as="font" type="font/ttf" crossorigin href="../fonts/Poppins-Bold.ttf"/>
+		<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Poppins'/> -->
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/reboot.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/default.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="../fonts/font-awesome/css/fontawesome-all.css"/>
-		<link rel="icon" type="image/png" href="../img/agizo-Icon-32x32.png" sizes="32x32"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/agizo-Icon-32x32.png"/>
 
 	<title>Agizo &ndash; Contact</title>
 </head>
@@ -33,52 +32,28 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<script>
-		//  When user scrolls - execute scrollingFunction
-		window.onscroll = function () { scrollingFunction() };
-		function scrollingFunction() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			var scrolled = (winScroll / height) * 100;
-			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
-			// after scrolling 99px, show the toTop icon
-			if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-				document.getElementById("scrollToTop").style.display = "block";
-			} else {
-				document.getElementById("scrollToTop").style.display = "none";
-			}
-		}
-	</script>
-
 	<div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<script>
-		// When user clicks the button, scroll to the top
-		function toTopFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;	}
-	</script>
 
+	<div class="page-wrapper debuger">
 
-	<div class="page-wrapper">
-
-		<div><a href="#footer" class="pointer"><div id="agizo-text-logo"></div></a></div>
-		<nav id="navigate" class="main-nav subheading ci-font-dark">
-			<ul>
-				<li></li>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="services.html">Services</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="devpage.html">Contact</a></li>
-				<li></li>
-			</ul>
+		<nav id="navigate" class="main-nav subheading antialias">
+			<a href="#header" class="default geometric"><div id="agizo-text-logo"></div></a>
+			<a href="../index.html" class="underline-on-hover">Home</a>
+			<a href="services.html" class="underline-on-hover">Services</a>
+			<a href="projects.html" class="underline-on-hover">Projects</a>
+			<a href="aboutus.html" class="underline-on-hover">About Us</a>
+			<a href="#footer" class="underline-is-fixed gutter-auto ci-font-white">Contact</a>
+			<a href="devpage.html" class="padding-left-i margin-right-2-i">
+				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
+			</a>
 		</nav>
-		<div id="semi-transparent-bg"></div>
- 		<hr class='separator-no-padding'>
+
+
+ 		<hr id="header" class='separator-no-padding'>
 
 		<header>
 			<div class="grid-one grid-gap-none">
@@ -147,7 +122,6 @@
 				<div class='empty-space empty-quart'></div>
 				<div class="subheading ci-font-agizo3 gutter-left">who we are</div>
 				<div class="semi-transparent-border"></div>
-				<!-- <div class='empty-space empty-half'></div> -->
 			</div>
 
 			<div class="grid-two">
@@ -160,98 +134,99 @@
 			</div>
 		</section>
 
-		<div class="ci-fill-agizo4 divider-padding-1x"></div>
-		<div class="ci-fill-agizo2 divider-padding-2x"></div>
+		<div class='empty-space --quadrant'></div>
 
-		<div class="grid-one-three">
-    <a href="#">Logo</a>
+    <section class="ci-fill-lightgrey">
+			<div class="grid-one-three">
+			<a href="#">Logo</a>
 
-			<div class="ci-fill-purewhite">
-				<div class="dropdown subheading">Dropdown
-					<div class="dropdown-container">
-						<div class="dropdown-content">
-							<span>XXXX</span>
+				<div class="ci-fill-purewhite">
+					<div class="dropdown subheading">Dropdown
+						<div class="dropdown-container">
+							<div class="dropdown-content">
+								<span>XXXX</span>
+							</div>
+							<div class="dropdown-content">YYYY</div>
+							<div class="dropdown-content">ZZZZ</div>
 						</div>
-						<div class="dropdown-content">YYYY</div>
-						<div class="dropdown-content">ZZZZ</div>
+					</div>
+				</div>
+
+				<button class="button dropdown left" >Dropdown <i class="fa fa-angle-down"></i>
+					<div class="dropdown-container --button-width">
+						<div class="dropdown-content padding-i left ci-fill-agizo1">
+							<div class="font-700 padding-bottom">Dropdown Menu </div>
+							<ul>
+								<li><a href="#">Option 1</a></li>
+								<li><a href="#">Option 2</a></li>
+							</ul>
+						</div>
+					</div>
+				</button>
+
+				<div class="button dropdown left margin-bottom-none-i margin-left" >Account <i class="fa fa-angle-down"></i>
+					<div class="dropdown-container --button-width">
+						<div class="dropdown-content padding-i left ci-fill-agizo2">
+							<ul>
+								<li class="padding-bottom"><a href="#">Option 1</a></li>
+								<li><a href="#">Option 2</a></li>
+								<li><a href="#">Option 3</a></li>
+								<li><a href="#">Option 4</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
 
-			<button class="button dropdown left" >Dropdown <i class="fa fa-angle-down"></i>
-				<div class="dropdown-container --button-width">
-					<div class="dropdown-content padding-i left ci-fill-agizo1">
-						<div class="font-700 padding-bottom">Dropdown Menu </div>
-						<ul>
-							<li><a href="#">Option 1</a></li>
-							<li><a href="#">Option 2</a></li>
-						</ul>
-					</div>
-				</div>
-			</button>
+		<div class="ci-fill-agizo1 divider-padding-2x"></div>
+		<div class="ci-fill-agizo2 divider-padding-1x"></div>
 
-			<div class="button dropdown left margin-bottom-none-i margin-left" >Account <i class="fa fa-angle-down"></i>
-				<div class="dropdown-container --button-width">
-					<div class="dropdown-content padding-i left ci-fill-agizo2">
-						<ul>
-							<li class="padding-bottom"><a href="#">Option 1</a></li>
-							<li><a href="#">Option 2</a></li>
-							<li><a href="#">Option 3</a></li>
-							<li><a href="#">Option 4</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<footer id="footer">
-			<div class="grid-3-1-1 padding-3-i ci-font-whitesmoke">
-				<div class="margin-left-i">
-					<h4 class="ci-font-alt1">About</h4>
-					<div class='empty-space empty-half'></div>
+			<div class="grid-3-1-1 padding-3 padding-bottom-i ci-font-whitesmoke">
+				<div class="margin-left-i padding-right-2-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">ABOUT</h4>
 					<p class="para-std ci-font-whitesmoke">
-						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, 
-						land-use planning and management, development planning, geographic information systems, 
-						land surveying and project management.
+						<strong>Agizo Solutions</strong> is a professional consultancy in the areas of strategic spatial planning, land-use planning and management, development planning, geographic information systems, land surveying and project management.
 					</p>
 				</div>
-				<div class="margin-left-3-i">
-					<h4 class="ci-font-alt1">Visit</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">VISIT</h4>
 					<div>6 East Street</div>
 					<div>Halfway Gardens</div>
 					<div>Midrand, 1686</div>
 				</div>
-				<div class="">
-					<h4 class="ci-font-alt1">Contact</h4>
-					<div class='empty-space empty-half'></div>
+				<div class="margin-left-i">
+					<h4 class="ci-font-alt1 padding-bottom-half-i">CONTACT</h4>
 					<div>Tel:&emsp;+27 11 312 8598</div>
 					<div>Fax:&emsp;+27 86 598 0773</div>
-					<div>Mail:&emsp;info@agizo.co.za</div>
+					<div>Mail:&emsp;
+						<a class="ci-font-whitesmoke" style="text-decoration:none;font-size:102%;" 
+								href="mailto:info@agizo.co.za">info@agizo.co.za</a>
+					</div>
 				</div>
 			</div>
 
- 			<div class="grid-two-one padding-1 padding-bottom-none-i ci-fill-darker">
-				<div class="ci-font-whitesmoke margin-left-2-i">
+ 			<div class="grid-three-two padding-1 ci-fill-darker">
+				<div class="margin-left-2-i">
 					<h6 class="ci-font-whitesmoke left">&nbsp;Copyright <span class="ci-font-puregrey">&copy;</span> 2012&ndash;2018</h6>
-				</div>
-				<div class="padding-none-i">
-					<div id="agizo-logo-float"></div>
-				</div>
-			</div>
 
- 			<div class="grid-one padding-1 padding-top-none-i ci-fill-darker negative-offset">
-				<div class="breadcrumb h6 smaller margin-left-3-i">
-					<div class="breadcrumb-item">
-						<a href="../index.html" class="underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
-					</div>
-					<div class="breadcrumb-item">
-						<a href="privacy.html" class="underline-on-hover">Terms of Use&nbsp; &amp; &nbsp;Privacy Policy</a>
+					<div class="breadcrumb h6 smaller padding-left-half-i negative-offset">
+						<a href="../index.html" class="breadcrumb-item underline-on-hover">Agizo Solutions (Pty) Ltd.</a>
+						<a href="privacy.html" class="breadcrumb-item"><span class="underline-on-hover">Terms of Use</span></a>
+						<a href="privacy.html#policies" class="breadcrumb-item"><span class="underline-on-hover">Privacy</span> *</a>
 					</div>
 				</div>
+
+				<div class="padding-none-i margin-left-3-i">
+					<div id="agizo-logo-float"></div></div>
 			</div>
+			<div class='empty-space empty-half ci-fill-darker'></div>
 		</footer>
 
-	</div>
+	</div> <!-- page-wrapper -->
+	<!-- placed at the end so pages load faster -->
+	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>
 </html>
