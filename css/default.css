@@ -1567,7 +1567,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 	font-size: .75rem !important;
 	letter-spacing: .25rem !important;
 	font-family: Poppins !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 	text-transform: uppercase !important; }
 	.btn:hover {
 		color: #356;
