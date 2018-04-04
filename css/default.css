@@ -361,9 +361,9 @@ p.para-intro {
 	text-transform: uppercase !important; }
 
 .icontitle, 
-.h2.icontitle, 
-h2.icontitle, 
-h2 .icontitle {
+.h3.icontitle, 
+h3.icontitle, 
+h3 .icontitle {
 	font-size: 2rem !important;
 	margin-top: 1rem; }
 
