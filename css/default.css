@@ -171,7 +171,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #666;
-	font-size: 1.1rem;
+	font-size: 1.15rem;
 	line-height: 1.8;
 	white-space: normal;
 	-webkit-font-kerning: normal !important;
@@ -235,7 +235,7 @@ p {
   margin-bottom: 1.1rem;
   font-size: inherit;
 	font-weight: normal;
-  line-height: 1.7;
+	line-height: 1.8;
   font-style: normal;
 	letter-spacing: normal;
   text-rendering: optimizeLegibility; }
@@ -340,8 +340,8 @@ h6,
 
 p.para-std {
 	color: #555;
-	font-size: 1.2rem;
-	line-height: 1.75 !important; }
+	font-size: 1.25rem;
+	line-height: 1.825 !important; }
 p.para-intro {
 	color: #444 !important;
 	font-size: 1.5rem;
@@ -604,6 +604,12 @@ h1 .pagetitle {
 
 /* navigation
 -------------------------------------------------------------- */
+nav#navigate.main-nav ~ a {
+  text-decoration: none;
+	font-family: Poppins !important;
+	font-weight: 600 !important;
+  font-size: .8rem !important;
+  letter-spacing: .05rem !important; }
 #navigate.main-nav {
   display: -ms-grid;
 	display: grid;
@@ -633,7 +639,7 @@ h1 .pagetitle {
     line-height: normal;
     text-decoration: none;
 	font-family: Poppins !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
     font-size: .8rem !important;
     letter-spacing: .05rem !important;
     padding: .67rem .2rem .33rem;
@@ -1569,7 +1575,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 	  font-weight: 600 !important;
 		border: .125rem solid #356;
 		background: transparent;
-		background-color: inherit;
+		background-color: #fff;
 		text-decoration: none; }
 
 .btn-lg {
