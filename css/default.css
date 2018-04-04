@@ -292,10 +292,10 @@ h2,
 h3,
 .h3,
 .sectionhead {
-	color: #444;
+	color: #555;
 	font-size: 2rem !important;
 	margin-top: 1rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 1.2;
 	letter-spacing: -.025rem; }
 
@@ -361,9 +361,9 @@ p.para-intro {
 	text-transform: uppercase !important; }
 
 .icontitle, 
-.h2.icontitle, 
-h2.icontitle, 
-h2 .icontitle {
+.h3.icontitle, 
+h3.icontitle, 
+h3 .icontitle {
 	font-size: 2rem !important;
 	margin-top: 1rem; }
 
@@ -1567,7 +1567,7 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
 	font-size: .75rem !important;
 	letter-spacing: .25rem !important;
 	font-family: Poppins !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 	text-transform: uppercase !important; }
 	.btn:hover {
 		color: #356;
