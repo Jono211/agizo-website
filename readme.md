@@ -22,22 +22,22 @@ agizo-website
   <tr>
     <td>02</td>
     <td>services</td>
-    <td>working example</td>
+    <td>initial example</td>
   </tr>
   <tr>
     <td>03</td>
     <td>projects</td>
-    <td>outlined only</td>
+    <td>outline only</td>
   </tr>
   <tr>
     <td>04</td>
     <td>about us</td>
-    <td>outlined only</td>
+    <td>outline only</td>
   </tr>
   <tr>
     <td>05</td>
     <td>contact<br></td>
-    <td>outlined only</td>
+    <td>outline only</td>
   </tr>
   <tr>
     <td>06</td>
