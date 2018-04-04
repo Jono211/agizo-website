@@ -295,7 +295,7 @@ h3,
 	color: #555;
 	font-size: 2rem !important;
 	margin-top: 1rem;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.2;
 	letter-spacing: -.025rem; }
 
@@ -365,6 +365,7 @@ p.para-intro {
 h3.icontitle, 
 h3 .icontitle {
 	font-size: 2rem !important;
+	font-weight: 300 !important;
 	margin-top: 1rem; }
 
 .pagetitle, 
