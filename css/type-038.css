@@ -15,12 +15,12 @@
 @font-face {
 	font-family: 'SF-Pro-Display';
 	src: url('../fonts/SF-Pro/SF-Pro-Display-Heavy.woff') format('woff');
-	font-weight: 800;
+	font-weight: 900;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
 	src: url('../fonts/SF-Pro/SF-Pro-Display-Bold.woff') format('woff');
-	font-weight: 700;
+	font-weight: bold;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
@@ -35,12 +35,17 @@
 @font-face {
 	font-family: 'SF-Pro-Display';
 	src: url('../fonts/SF-Pro/SF-Pro-Display-Regular.woff') format('woff');
-	font-weight: 400;
+	font-weight: normal;
 	font-style: normal; }
 @font-face {
 	font-family: 'SF-Pro-Display';
 	src: url('../fonts/SF-Pro/SF-Pro-Display-Light.woff') format('woff');
 	font-weight: 300;
+	font-style: normal; }
+@font-face {
+	font-family: 'SF-Pro-Display';
+	src: url('../fonts/SF-Pro/SF-Pro-Display-Thin.woff') format('woff');
+	font-weight: 200;
 	font-style: normal; }
 
 
@@ -186,6 +191,6 @@ h1.page-title,
 h1 .page-title, 
 .h1.page-title {
 	font-size: 6rem !important;
-	font-weight: 800 !important;
+	font-weight: 900 !important;
 	letter-spacing: -.3rem !important; }
 
