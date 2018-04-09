@@ -119,14 +119,14 @@ misc
 @font-face {
 	font-family: Poppins;
 	src: url('../fonts/Poppins-Semibold.ttf') format('truetype');
-	font-weight: 500;
+	font-weight: 600;
 	font-style: normal; }
 @font-face {
 	font-family: Poppins;
 	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
-	font-weight: 600;
+	font-weight: 700;
 	font-style: normal; }
-@import url(//fonts.googleapis.com/css?family=Poppins);
+/* @import url(//fonts.googleapis.com/css?family=Poppins); */
 
 
 /* normalise
@@ -147,8 +147,8 @@ html {
   	 -moz-text-size-adjust: 100%;
   		-ms-text-size-adjust: 100%; }
 
-@media screen and (max-width: 767px) { html { font-size: calc(.15rem + 1vw); } }
-@media screen and (max-width: 479px) { html { font-size: calc(.12rem + 1vw); } }
+@media screen and (max-width: 768px) { html { font-size: calc(.16rem + 1.5vw); } }
+@media screen and (max-width: 480px) { html { font-size: calc(.16rem + 2vw); } }
 
 
 html, body, div, 
@@ -292,10 +292,10 @@ h2,
 h3,
 .h3,
 .sectionhead {
-	color: #555;
+	color: #444;
 	font-size: 2rem !important;
 	margin-top: 1rem;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.2;
 	letter-spacing: -.025rem; }
 
@@ -304,7 +304,7 @@ h4,
 .subsectionhead {
 	font-family: Poppins !important;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: .75rem;
 	text-transform: uppercase; }
 
@@ -347,6 +347,7 @@ p.para-intro {
 	font-size: 1.5rem;
 	line-height: 1.875 !important;
   /* text-align: justify; */
+  -webkit-hyphenate-character: auto;
 	-webkit-hyphens: auto;
 	   -moz-hyphens: auto;
 	    -ms-hyphens: auto;
@@ -356,7 +357,7 @@ p.para-intro {
 .subheading {
 	font-family: Poppins !important;
 	font-size: 1rem !important;
-	font-weight: 500 !important;
+	font-weight: 600 !important;
 	letter-spacing: .8rem !important;
 	text-transform: uppercase !important; }
 
@@ -365,6 +366,8 @@ p.para-intro {
 h3.icontitle, 
 h3 .icontitle {
 	font-size: 2rem !important;
+	font-weight: 400 !important;
+	color: #666;
 	margin-top: 1rem; }
 
 .pagetitle, 
@@ -417,6 +420,22 @@ h1 .pagetitle {
   margin-top: -.5rem; } */
 
 
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.text-clip {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap; }
+.text-break {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word; }
+
+
 /* =========================================================== */
 /* ----------------------------------------------------------- */
 
@@ -432,6 +451,8 @@ h1 .pagetitle {
 	display: grid;
 	width: 100%;
   overflow-x: hidden;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
 }
 
 /*
@@ -1303,6 +1324,9 @@ img.img-full { width: 100%; max-width: 100%; }
 .gutter-left-sm { margin-left: .68rem; }
 .gutter-right-sm { margin-right: .68rem; }
 
+.gutter-left-auto { margin-left: auto; }
+.gutter-right-auto { margin-right: auto; }
+
 .gutter-auto {
 	margin-left: auto;
 	margin-right: auto; }
@@ -1503,6 +1527,7 @@ hr {
 		-webkit-box-ordinal-group: initial;
     -ms-flex-order: initial;
 		order: initial;
+    margin-left: -1.5rem !important;
 	}
 	/*.tabs > label:not(:first-of-type) {
 		background: rgba(238, 238, 238, 0.8);
