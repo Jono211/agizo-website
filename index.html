@@ -11,7 +11,7 @@
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Medium.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Regular.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Light.woff" as="font" type="font/woff" crossorigin/>
-		<!-- <link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/> -->
+		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/Poppins-Semibold.ttf" as="font" type="font/ttf" crossorigin/>
 		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin/>
 		<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Poppins'/> -->
@@ -33,35 +33,11 @@
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<!-- <script>
-		//  When user scrolls - execute scrollingFunction
-		var prevScrollPos = window.pageYOffset;
-		window.onscroll = function () { scrollingFunction() };
-		function scrollingFunction() {
-			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			var scrolled = (winScroll / height) * 100;
-			document.getElementById("scrollProgressBar").style.width = scrolled + "%";
-			// after scrolling 99px, show the toTop icon
-			if (winScroll > 99 || winScroll > 99) {
-			//if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-				document.getElementById("scrollToTop").style.display = "block";
-			} else {
-				document.getElementById("scrollToTop").style.display = "none";
-			}
-		}
-	</script> -->
 	<div>
-		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
+		<button onclick="toTopFunction()" id="scrollToTop" title="Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
 	</div>
-	<!-- <script>
-		// When user clicks the button, scroll to the top
-		function toTopFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;	}
-	</script> -->
 
 	<div id="homePage" class="page-wrapper debuger">
 
@@ -76,30 +52,6 @@
 				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
 			</a>
 		</nav>
-		<!-- <script type='text/javascript'>
-			//var prevScrollPos = window.pageYOffset;
-			function hideOnScroll () {
-				var navbar = document.getElementById('navigate');
-				var currentScrollPos = window.pageYOffset;
-				if(prevScrollPos > currentScrollPos) {
-					navbar.style.top = '4px';
-				} else {
-					navbar.style.top = '-40px';
-				}
-				prevScrollPos = currentScrollPos;
-				/*if(currentScrollPos > 555) {
-					navbar.style.backgroundColor = 'grey';
-				} else {
-					navbar.style.backgroundColor = 'transparent';
-				}*/
-				if(currentScrollPos > 555) {
-					navbar.classList.add("filled")
-				} else {
-					navbar.classList.remove("filled");
-				}
-			}
-			window.addEventListener('scroll', hideOnScroll);
-		</script> -->
 
 
  		<hr id="header" class='separator-no-padding'>
@@ -414,36 +366,6 @@
       </div>
 			<div class='empty-space empty-single'></div>
     </section>
-		<!-- <script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-			function plusSlides(n) {
-				showSlides(slideIndex += n);
-			}
-			function currentSlide(n) {
-				showSlides(slideIndex = n);
-			}
-			function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("slides");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {
-					slideIndex = 1
-				}
-				if (n < 1) {
-					slideIndex = slides.length
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
-			}
-		</script> -->
-
 
 		<div class="grid-center pointer-noevents">
 			<div class='placeholder-img full-width img-shadow'>
