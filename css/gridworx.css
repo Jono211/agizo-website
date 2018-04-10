@@ -56,9 +56,9 @@
 
 /* 
   GRID - Forked from Bootstrap 4
+  Licensed under the MIT license
   Copyright (c) 2011-2017 Twitter, Inc.
   Copyright (c) 2011-2017 the Bootstrap Authors
-  Licensed under the MIT license
 */
 
 /* Containers */
@@ -117,10 +117,10 @@
     padding-left: 0; }
 
 
-.row-start { justify-content: flex-start; }
-.row-center { justify-content: center; }
-.row-end { justify-content: flex-end; }
-.row-around { justify-content: space-around; }
+.row-start   { justify-content: flex-start; }
+.row-center  { justify-content: center; }
+.row-end     { justify-content: flex-end; }
+.row-around  { justify-content: space-around; }
 .row-between { justify-content: space-between; }
 
 /* Columns */

@@ -25,17 +25,12 @@
 </head>
 <!--
 -->
-<body>
+<body id="top">
 
 	<div class="progress-wrapper">
 		<div class="progress-container">
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
-	</div>
-	<div>
-		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
-			<i class="fa fa-2x fa-chevron-circle-up"></i>
-		</button>
 	</div>
 
 	<div class="page-wrapper debuger">
@@ -59,7 +54,7 @@
 			<div class="grid-one grid-gap-none">
 				<div id="placeholder-documents" class="img-shadow"></div>
 				<!-- <img id="agizo-logo-theme" style="width:480px;height:120px;top:100px;"> -->
-				<div id="agizo-logo-theme" style="width:60rem;height:15rem;top:12.5%;margin:0 auto;"></div>
+				<div id="agizo-logo-theme" class="gutter-auto pull-left" style="width:60rem;height:15rem;top:12.5%;"></div>
 			</div>
 			<div id="divider-gradient" class="divider-padding-2x"></div>
 			<!-- <div class='caption'>
@@ -119,11 +114,9 @@
 					<h3>8. &ensp;Governing Law</h3>
 					<p>Any claim relating to Agizo Solutions's website shall be governed by the laws of the Republic of South Africa without regard to its conflict of law provisions.</p>
 
-					<br><p class='center'>&mdash; &ensp; General Terms and Conditions applicable to Use of Agizo Solutions Website. &ensp; &mdash;</p>
-
+					<br><p class='center'>&mdash; &ensp; General Terms and Conditions applicable to Use of Agizo Solutions Website &ensp; &mdash;</p>
 
  					<hr id="policies" class='separator-double-padding'>
-
 
 					<h2>Privacy Policy</h2>
 
@@ -205,7 +198,10 @@
 		</footer>
 
 	</div> <!-- page-wrapper -->
+	<a id="scrollToTop" href="#top" title="Top"><i class="fa fa-2x fa-chevron-circle-up"></i></a>
+
 	<!-- placed at the end so pages load faster -->
+	<script src='../js/jquery.js'></script>
 	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>
 </html>

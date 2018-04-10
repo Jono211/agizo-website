@@ -26,22 +26,22 @@
 </head>
 <!--
 -->
-<body>
+<body id="top">
 
 	<div class="progress-wrapper">
 		<div class="progress-container">
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
 	</div>
-	<div>
+	<!-- <div>
 		<button onclick="toTopFunction()" id="scrollToTop" title="Top">
 			<i class="fa fa-2x fa-chevron-circle-up"></i>
 		</button>
-	</div>
+	</div> -->
 
 	<div id="homePage" class="page-wrapper debuger">
 
-		<nav id="navigate" class="main-nav subheading">
+		<nav id="navigate" class="main-nav subheading text-ellipsis">
 			<a href="#header" class="default geometric"><div id="agizo-text-logo"></div></a>
 			<a href="#footer" class="underline-is-fixed --home gutter-auto ci-font-white">Home</a>
 			<a href="root/services.html" class="underline-on-hover">Services</a>
@@ -421,7 +421,10 @@
 		</footer>
 
 	</div> <!-- page-wrapper -->
+	<a id="scrollToTop" href="#top" title="Top"><i class="fa fa-2x fa-chevron-circle-up"></i></a>
+
 	<!-- placed at the end so pages load faster -->
+	<script src='js/jquery.js'></script>
 	<script type='text/javascript' src='js/scripts.js'></script>
 </body>
 </html>

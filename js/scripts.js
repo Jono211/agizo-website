@@ -1,5 +1,6 @@
 // basic javaScript functions ...
 
+
 //  When user scrolls - execute scrollingFunction
 var prevScrollPos = window.pageYOffset;
 window.onscroll = function () { scrollingFunction(); };
@@ -9,13 +10,13 @@ function scrollingFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("scrollProgressBar").style.width = scrolled + "%";
   // after scrolling 99px, show the toTop icon
-  if (winScroll > 99 || winScroll > 99) {
-  //if (document.body.scrollTop > 99 || document.documentElement.scrollTop > 99) {
-    document.getElementById("scrollToTop").style.display = "block";
-  } else {
-    document.getElementById("scrollToTop").style.display = "none";
-  }
+  // if (winScroll > 99 || winScroll > 99) {
+  //   document.getElementById("scrollToTop").style.display = "block";
+  // } else {
+  //   document.getElementById("scrollToTop").style.display = "none";
+  // }
 }
+
 
 // When user clicks the button, scroll to the top
 function toTopFunction() {
@@ -78,3 +79,17 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+
+jQuery("#scrollToTop").click(function () {
+  jQuery("body,html").animate({
+    scrollTop: 0
+  }, 900);
+});
+jQuery(window).scroll(function () {
+  if (jQuery(window).scrollTop() > 222) {
+    jQuery("#scrollToTop").addClass("visible");
+  } else {
+    jQuery("#scrollToTop").removeClass("visible");
+  }
+});
