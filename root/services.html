@@ -25,17 +25,12 @@
 </head>
 <!--
 -->
-<body>
+<body id="top">
 
 	<div class="progress-wrapper">
 		<div class="progress-container">
 			<div class="progress-bar" id="scrollProgressBar"></div>
 		</div>
-	</div>
-	<div>
-		<button onclick="toTopFunction()" id="scrollToTop" title="to Top">
-			<i class="fa fa-2x fa-chevron-circle-up"></i>
-		</button>
 	</div>
 
 	<div class="page-wrapper debuger">
@@ -225,7 +220,10 @@
 		</footer>
 
 	</div> <!-- page-wrapper -->
+	<a id="scrollToTop" href="#top" title="Top"><i class="fa fa-2x fa-chevron-circle-up"></i></a>
+
 	<!-- placed at the end so pages load faster -->
+	<script src='../js/jquery.js'></script>
 	<script type='text/javascript' src='../js/scripts.js'></script>
 </body>
 </html>
