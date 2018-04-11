@@ -333,7 +333,8 @@ h6,
   h3, .h3 {
     font-size: 1.725rem !important;
 	  letter-spacing: normal; 
-  } 
+  }
+  p { font-weight: 500; }
 }
 
 
