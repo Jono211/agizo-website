@@ -5,20 +5,22 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'/>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
 
-		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Heavy.woff" as="font" type="font/woff" crossorigin/>
+		<!-- <link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Heavy.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Bold.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Semibold.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Medium.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Regular.woff" as="font" type="font/woff" crossorigin/>
 		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Light.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/>
-		<link rel="preload" href="fonts/Poppins-Semibold.ttf" as="font" type="font/ttf" crossorigin/>
-		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin/>
+		<link rel="preload" href="fonts/SF-Pro/SF-Pro-Display-Thin.woff" as="font" type="font/woff" crossorigin/> -->
+		<!-- <link rel="preload" href="fonts/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin/>
+		<link rel="preload" href="fonts/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin/> -->
 		<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Poppins'/> -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/reboot.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/default.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/vivify.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="fonts/san-francisco/stylesheet.css"/>
 		<link rel="stylesheet" type="text/css" media="screen" href="fonts/font-awesome/css/fontawesome-all.css"/>
 		<link rel="icon" type="image/png" href="img/agizo-Icon-32x32.png" sizes="32x32"/>
 
@@ -46,10 +48,10 @@
 			<a href="#footer" class="underline-is-fixed --home gutter-auto ci-font-white">Home</a>
 			<a href="root/services.html" class="underline-on-hover">Services</a>
 			<a href="root/projects.html" class="underline-on-hover">Projects</a>
-			<a href="root/aboutus.html" class="underline-on-hover">About Us</a>
+			<a href="root/aboutus.html" class="underline-on-hover">About&nbsp;Us</a>
 			<a href="root/contact.html" class="underline-on-hover">Contact</a>
 			<a href="root/devpage.html" class="padding-left-i margin-right-2-i">
-				<i style="padding-top:.27rem;" class="fa fa-pull-left fa-lg fa-search fa-inverse"></i>
+				<i style="padding-top:.24rem;" class="fa fa-pull-left fa-lg fa-search"></i>
 			</a>
 		</nav>
 
@@ -210,7 +212,7 @@
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div id="our-services1"></div>
+							<div id="our-services1" data-animate data-animation-classes="animated jackInTheBox"></div>
 							<!--<div class='placeholder-img half-block img-shadow'>
 								<div class="align-left align-top">
 									<i class="fa fa-5x fa-image"></i>
@@ -229,7 +231,8 @@
 					<div class='grid-two'>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div class='vivify driveInLeft delay-2500'>
+							<!-- <div data-animate data-animation-classes='vivify driveInLeft'> -->
+							<div data-animate data-animation-classes='animated swing'>
 								<div id="our-services2"></div>
  							</div>
 						</div>
@@ -276,7 +279,10 @@
 						</div>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
- 							<div id="our-services3"></div>
+ 							<!-- <div id="our-services3" class="visible" data-animate data-animation-classes="vivify driveInRight delay-500" data-animation-scrolled="true"></div> -->
+ 							<div data-animate data-animation-classes="animated jackInTheBox">
+								<div id="our-services3" class="img-responsive"></div>
+							</div>
 						</div>
 					</div>
 				<div class='empty-space empty-quart'></div>
@@ -287,7 +293,8 @@
 					<div class='grid-two'>
 						<div class="centered-item padding-sides">
 							<div class='empty-space empty-quart'></div>
-							<div class='vivify driveInLeft delay-4500'>
+							<!-- <div data-animate data-animation-classes='vivify driveInLeft'> -->
+							<div data-animate data-animation-classes='animated jackInTheBox'>
 								<div id="our-services4" class="img-responsive"></div>
 							</div>
 						</div>
@@ -367,14 +374,21 @@
 			<div class='empty-space empty-single'></div>
     </section>
 
-		<div class="grid-center pointer-noevents">
+		<!-- <div class="grid-center pointer-noevents">
 			<div class='placeholder-img full-width img-shadow'>
 				<div class="center-i">
 					<br><br><i class="fa fa-5x fa-image"></i>
 					<p class="h4 ci-font-dark padding-top-half-i">Wide Image<br>Placeholder<br></p>
 				</div>
 			</div>
-		</div>
+		</div> -->
+    <section id='finalPicture' class="section-container">
+			<div class="grid-one grid-gap-none">
+				<div id="placeholder-newspaper" class="img-shadow img-responsive top-shadow">
+					<div id="agizo-logo-fixed"></div>
+				</div>
+			</div>
+		</section>
  		<div id="divider-gradient" class="divider-padding-2x"></div>
 
 
@@ -390,7 +404,7 @@
 					<h4 class="ci-font-alt1 padding-bottom-half-i">VISIT</h4>
 					<div>6 East Street</div>
 					<div>Halfway Gardens</div>
-					<div>Midrand, 1686</div>
+					<div>Midrand,&ensp;1686&ensp;(GP)</div>
 				</div>
 				<div class="margin-left-i">
 					<h4 class="ci-font-alt1 padding-bottom-half-i">CONTACT</h4>
@@ -425,6 +439,36 @@
 
 	<!-- placed at the end so pages load faster -->
 	<script src='js/jquery.js'></script>
-	<script type='text/javascript' src='js/scripts.js'></script>
+	<script src='js/scripts.js'></script>
+	<script src="js/animate.js"></script>
+	<script>
+		var animate = new Animate({
+			// target: '[data-animate]',
+			// animatedClass: 'js-animated',
+			// offset: [0.1, 1],
+			// delay: 500,
+			remove: false,
+			reverse: true,
+			scrolled: true,
+			// onLoad: true,
+			// onScroll: true,
+			// onResize: false,
+        // target: '[data-animate]',
+        // animatedClass: 'js-animated',
+        // offset: [0.5, 0.5],
+        // delay: 0,
+        // remove: true,
+        // reverse: false,
+        // scrolled: false,
+        // onLoad: true,
+        // onScroll: true,
+        // onResize: false,
+        // disableFilter: false,
+        // callbackOnInit: function() {},
+        // callbackOnAnimate: function(el) {},
+		});
+		animate.init();
+	</script>
+
 </body>
 </html>
