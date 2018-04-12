@@ -405,8 +405,11 @@ h1 .pagetitle {
 	  letter-spacing: normal; } } */
 
 
-.smaller { font-size: 90% !important; }
+.smaller      { font-size: 90% !important; }
 .much-smaller { font-size: 80% !important; }
+
+.bigger       { font-size: 125% !important; }
+.much-bigger  { font-size: 150% !important; }
 
 /* below "Measures" will limit the amount of 
    characters per line to ~66, ~80 and ~45. */
@@ -888,7 +891,7 @@ nav#navigate.main-nav ~ a {
 	height: 18rem !important;
 	max-height: 18rem !important;
   background-attachment: scroll;
-	background-position: center -25rem !important;
+	background-position: center -25rem;
   background-image: 
     url('../img/23-news-1440x954.jpg'); }
 
@@ -898,18 +901,28 @@ nav#navigate.main-nav ~ a {
   background-image: 
     url('../img/33-dji-obsidian-1422x800.jpg'); }
 
+#placeholder-passion {
+	height: 30rem !important;
+	max-height: 30rem !important;
+	background-position: center -10rem;
+  background-image: 
+		url('../img/semi-transparent.png'), 
+    url('../img/67-passion-1280x854.jpg'); }
+
 /*
 50-highway-1280x853.jpg
 60_roads_1280x720.jpg
 23-news-1440x954.jpg
 33-dji-obsidian-1422x800.jpg
+67-passion-1280x854.jpg
 */
 
 @media screen and (max-width: 768px) {
   [id^='placeholder'] {
 	  background-attachment: scroll;
   }
-  #placeholder-newspaper {
+  #placeholder-newspaper, 
+  #placeholder-passion {
 		background-position: center center !important;
   }
 }
