@@ -647,7 +647,7 @@ nav#navigate.main-nav ~ a {
   display: -ms-grid;
 	display: grid;
 	/* grid-template-columns: 6fr repeat(5, 1fr) .75fr; */
-	grid-template-columns: 7fr repeat(5, minmax(40px, 1fr)) .7fr;
+	grid-template-columns: 7fr repeat(5, minmax(38px, 1fr)) .7fr;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
@@ -1029,6 +1029,9 @@ nav#navigate.main-nav ~ a {
 	background: #555; }
 /* box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .3), 0 .375rem 1.25rem 0 rgba(0, 0, 0, .3); */
 
+#footer .about-text {
+  line-height: 1.67 !important;
+}
 
 /* header
 -------------------------------------------------------------- */
@@ -1068,14 +1071,14 @@ nav#navigate.main-nav ~ a {
     height: 50vh;
 	  background-attachment: scroll;
 		background-position: center center;
-  /* background-position-y: -5vh !important; */
   }
-  /* #hero-picture .hero-picture-text {
-    padding-top: 9rem;
-    padding-left: 3rem; 
-  } */
 }
-
+@media screen and (max-width: 480px) {
+  #hero-picture .hero-picture-text {
+    /* padding-top: 9rem; */
+    padding-left: 2rem; 
+  }
+}
 
 #agizo-text-logo {
 	/* background-image: url('../img/agizo-textual-128x23.png'); */
@@ -1141,6 +1144,9 @@ nav#navigate.main-nav ~ a {
 @media screen and (max-width: 480px) {
   #agizo-text-logo {
     clip: rect(auto 3rem auto auto);
+  }
+  #agizo-logo-white {
+    left: 2rem;
   }
 }
 
@@ -1291,6 +1297,9 @@ nav#navigate.main-nav ~ a {
 .ci-font-puregrey 	{ color: #808080 !important; }
 .ci-line-puregrey 	{ border-color: #808080 !important; }
 .ci-fill-puregrey 	{ background-color: #808080 !important; }
+.ci-font-basegrey 	{ color: #aaa !important; }
+.ci-line-basegrey 	{ border-color: #aaa !important; }
+.ci-fill-basegrey 	{ background-color: #aaa !important; }
 .ci-font-lightgrey  { color: #eee !important; }
 .ci-line-lightgrey  { border-color: #eee !important; }
 .ci-fill-lightgrey  { background-color: #eee !important; }
