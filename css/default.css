@@ -351,7 +351,7 @@ p.para-intro {
 	-webkit-hyphens: auto;
 	   -moz-hyphens: auto;
 	    -ms-hyphens: auto;
-	        hyphens: auto }
+	        hyphens: auto; }
 
 .subtitle, 
 .subheading {
@@ -378,7 +378,8 @@ h1 .pagetitle {
 	font-weight: 900 !important;
 	letter-spacing: -.3rem !important; }
 
-.caption-overlay span {
+.caption-overlay div {
+	font-weight: 200 !important;
 	position: absolute;
 	top: 20%;
   left: 5%;
@@ -387,10 +388,12 @@ h1 .pagetitle {
   /* text-shadow: 1px 2px 30px rgba(0, 0, 0, .5); */
   text-shadow: 2px 2px 22px rgba(0, 0, 0, .5); }
   @media screen and (max-width: 768px) {
-    .caption-overlay span {
+    .caption-overlay div {
+	    /* font-weight: 300 !important; */
       font-size: 95% !important; } }
     @media screen and (max-width: 480px) {
-      .caption-overlay span {
+      .caption-overlay div {
+	      font-weight: 300 !important;
         font-size: 90% !important; } }
 
 
@@ -490,7 +493,7 @@ h1 .pagetitle {
 	.block-center > div {
 		/*text-align: center;*/
 		-webkit-box-pack: center;
-      -ms-flex-pack: center;
+    -ms-flex-pack: center;
 		justify-content: center;
 		-ms-flex-line-pack: center;
 		align-content: center; }
@@ -888,8 +891,8 @@ nav#navigate.main-nav ~ a {
     url('../img/58-bridge-1280px.jpg'); }
 
 #placeholder-newspaper {
-	height: 18rem !important;
-	max-height: 18rem !important;
+	height: 24rem !important;
+	/* max-height: 18rem !important; */
   background-attachment: scroll;
 	background-position: center -25rem;
   background-image: 
@@ -1959,24 +1962,57 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
           backface-visibility: hidden; }
 
 /* Ken Burns */
-.with-kburns {
+/* .with-kburns {
 	width: 100% !important;
-	overflow-x: hidden;
-	overflow-y: hidden;
-  display: table-cell;
   -webkit-animation: kenburns 15s ease alternate forwards;
   animation: kenburns 15s ease alternate forwards; }
-  @-webkit-keyframes kenburns {
-    100% {
-      -webkit-transform: scale(1.15); } }
+  @-webkit-keyframes kenburns { 100% { -webkit-transform: scale(1.15); } }
   @keyframes kenburns {
     100% {
       -webkit-transform-origin: center;
       transform-origin: center;
-      /* transform: scale(1.15); } } */
-      /* transform: scale(1.15) scale3d(1, 1, 1); } } */
-      -webkit-transform: scale3d(1.15, .85, 1) translate3d(0, 0, 10px);
-      transform: scale3d(1.15, .85, 1) translate3d(0, 0, 10px); } }
+      transform: scale(1.15); } } */
+
+#kburns-container {
+  background-color: #333;
+	height: 16rem !important;
+  overflow: hidden; }
+/* #kburns-image-container img { */
+#kburns-container .kburns-image {
+  animation: kenburns 32s infinite;
+  /* animation: kenburns 32s ease alternate forwards; */
+}
+@keyframes kenburns {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.15); }
+  100% {
+    animation-timing-function: ease-in;
+    transform: scale(1); } }
+
+/* @keyframes kenburns {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% { */
+    /* transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px); */
+    /* transform: scale3d(1.15, 1.15, 1.15) translate3d(2.25rem, -1.5rem, 0rem);
+    animation-timing-function: linear;
+    animation-timing-function: ease-in;
+    transform-origin: center;
+    opacity: 1;
+  }
+  100% { */
+    /* transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px); */
+    /* transform: scale3d(1.5, 1.5, 1.5) translate3d(1.5rem, -.75rem, 0rem);
+    opacity: 0;
+  }
+} */
+
 
 
 /* scroll-to-top
@@ -1989,15 +2025,17 @@ li:not(:last-child) { border-right: 2px solid #d2d5e4; }
   right: 1.5rem;
   z-index: 9999;
   cursor: pointer;
-  color: #36c; 
+  /* color: #36c;  */
+  color: #c36; 
   background-color: transparent;
 	text-shadow: .05rem .05rem 1.5rem rgba(0, 0, 0, .3) !important; }
   #scrollToTop.visible {
     opacity: .75;
     visibility: visible; }
     #scrollToTop:hover { 
-      opacity: 1;
-      color: #c36; }
+      /* color: #c36; */
+      color: #36c;
+      opacity: 1; }
 
 /* #backToTop {
   z-index: 999;

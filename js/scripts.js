@@ -59,11 +59,11 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slides");
   var dots = document.getElementsByClassName("dot");
-  //if (slides.length != 3) {
-  if (slides.length == 0) {
-    // Some weirdness is happening, so bail
-    return;
-  }
+    //if (slides.length != 3) {
+    if (slides.length == 0) {
+      // Some weirdness is happening, so bail
+      return;
+    }
     if (n > slides.length) {
       slideIndex = 1;
     }
@@ -92,4 +92,11 @@ jQuery(window).scroll(function () {
   } else {
     jQuery("#scrollToTop").removeClass("visible");
   }
+});
+
+$("#agizo-logo-fixed").click(function() {
+alert('Window width: ' + '\u00A0' + $(window).width() + '\u000A' +
+      'Window height: ' + '\u00A0' + $(window).height() + '\u000A' + '\u000A' +
+      'Document width: ' + '\u00A0' + $(document).width() + '\u000A' +
+      'Document height: ' + '\u00A0' + $(document).height());
 });
